@@ -60,6 +60,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 - Problem-solving
 
 ---
+---
 
 ## Cybersecurity Glossary
 
@@ -582,5 +583,42 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 
 ### **Z**  
 **Zero-day**: An exploit that was previously unknown
+
+---
+---
+
+## Cybersecurity Skills Summary
+
+### Transferable Skills
+
+**Communication** – Explain risks to both technical and non-technical audiences.
+
+**Problem-Solving** – Identify attack patterns and implement efficient solutions.
+
+**Time Management** – Prioritize urgent tasks to minimize damage.
+
+**Growth Mindset** – Continuously learn in a fast-evolving industry.
+
+**Diverse Perspectives** – Collaborate for better security solutions.
+
+---
+
+### Technical Skills
+
+**Programming (Python/SQL)** – Automate tasks and analyze threats.
+
+**SIEM Tools** – Monitor logs to detect security risks.
+
+**Intrusion Detection Systems (IDS)** – Track unauthorized network activity.
+
+**Threat Landscape Knowledge** – Stay updated on malware and attack trends.
+
+**Incident Response** – Follow protocols to investigate and resolve breaches.
+
+---
+
+### Key Takeaway:
+
+A mix of soft skills (communication, problem-solving) and technical expertise (SIEM, programming) is essential for cybersecurity success.
 
 

@@ -584,7 +584,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **YARA-L**: A computer language used to create rules for searching through ingested log data  
 
 #### **Z**  
-**Zero-day**: An exploit that was previously unknown
+**Zero-day:** An exploit that was previously unknown
 
 ---
 
@@ -642,7 +642,7 @@ When security analysts need to review vulnerabilities, they conduct a periodic s
 
 ---
 
-### Terms and definitions from Course 1
+### Terms and definitions from Module 1
 
 **Cybersecurity (or Security):** The practice of ensuring confidentiality, integrity, and availability of information by protecting networks, devices, people, and data from unauthorized access or criminal exploitation
 
@@ -667,4 +667,306 @@ When security analysts need to review vulnerabilities, they conduct a periodic s
 **Transferable skills:** Skills from other areas that can apply to different careers 
 
 ---
+---
+
+## Module 2
+
+### Common attacks and their effectiveness
+
+**Historical Attacks shaped cybersecurity:**
+
+Historical Attacks (e.g., ILOVEYOU virus, Morris worm) exposed critical vulnerabilities, driving the creation of Computer Security Incident Response Teams (CSIRTs) to combat threats.
+
+**Modern Threat Landscape:**
+
+Attack methods constantly evolve, requiring cybersecurity professionals to:
+
+  - Study past and present attack tactics (e.g., malware, social engineering).
+
+  - Understand threat actors’ techniques to strengthen defenses.
+
+**Key Takeaway:** Familiarity with attack methods helps protect organizations and individuals proactively.
+
+--- 
+
+### Common Cyber Attacks
+
+#### Phishing
+
+**Definition:** Tricking users into revealing sensitive data via digital communication or deploying malicious software.
+
+**Types:**
+
+**BEC:** Impersonates trusted sources for financial gain.
+
+**Spear phishing:** Targets specific individuals/groups.
+
+**Whaling:** Focuses on executives.
+
+**Vishing/Smishing:** Uses voice calls or texts.
+
+#### Malware
+
+**Definition:** Harms systems for profit or intelligence.
+
+**Types:**
+
+**Viruses:** User-triggered, damages data/files.
+
+**Worms:** Self-replicating, spreads via networks.
+
+**Ransomware:** Encrypts data for ransom.
+
+**Spyware:** Steals private data (emails, locations).
+
+#### Social Engineering
+
+**Definition:** Manipulates human trust to gain access/data.
+
+**Types:**
+
+**Social media phishing:** Uses personal info from platforms.
+
+**Watering hole:** Infects frequently visited sites.
+
+**USB baiting:** Leaves malware-infected USBs.
+
+**Physical impersonation:** Poses as employees/vendors.
+
+**Why It Works:** Exploits authority, urgency, scarcity, trust, and familiarity.
+
+#### Key Takeaway
+
+Understanding these attacks helps identify and defend against threats.
+
+---
+
+### Certified Information Systems Security Professional (CISSP) security domains
+
+The 8 CISSP domains help categorize attacks and their impacts:
+
+<img width="981" height="538" alt="image" src="https://github.com/user-attachments/assets/1267b0e2-c405-4d95-8ed4-8ee1e501c546" />
+
+#### 1. Security & Risk Management
+
+**Attack Example:** Social Engineering (exploits policy gaps/human error).
+
+**Risk:** Compliance violations, reputational damage.
+
+#### 2. Asset Security
+
+**Attack Example:** Data Breaches (Equifax, ransomware).
+
+**Risk:** Theft of PII/SPII, financial losses.
+
+#### 3. Security Architecture & Engineering
+
+**Attack Example:** Zero-Day Exploits (unknown vulnerabilities).
+
+**Risk:** System compromise, unauthorized access.
+
+#### 4. Communication & Network Security
+
+**Attack Example:** DDoS Attacks (overwhelming networks).
+
+**Risk:** Service disruption, operational downtime.
+
+#### 5. Identity & Access Management (IAM)
+
+**Attack Example:** Credential Stuffing (reusing stolen passwords).
+
+**Risk:** Unauthorized account access.
+
+#### 6. Security Assessment & Testing
+
+**Attack Example:** SQL Injection (exploiting poor input validation).
+
+**Risk:** Data corruption/theft.
+
+#### 7. Security Operations
+
+**Attack Example:** Malware Attacks (viruses, worms).
+
+**Risk:** System damage, data exfiltration.
+
+#### 8. Software Development Security
+
+**Attack Example:** Supply Chain Attacks (compromising third-party code).
+
+**Risk:** Widespread system infections.
+
+---
+
+### Attack
+
+An attack is a deliberate attempt to breach, damage, or gain unauthorized access to computer systems, networks, or data. Examples include hacking, malware, and phishing.
+
+### Attack types
+
+#### Password attack
+
+A password attack is an attempt to access password-secured devices, systems, networks, or data. 
+
+**Types:**  
+
+- Brute force
+
+- Rainbow table
+
+Password attacks fall under the communication and network security domain. 
+
+#### Social engineering attack
+
+Social engineering is a manipulation technique that exploits human error to gain private information, access, or valuables.
+
+**Types:** 
+
+- Phishing
+
+- Smishing
+
+- Vishing
+
+- Spear phishing
+
+- Whaling
+
+- Social media phishing
+
+- Business Email Compromise (BEC)
+
+- Watering hole attack
+
+- USB (Universal Serial Bus) baiting
+
+- Physical social engineering 
+
+Social engineering attacks are related to the security and risk management domain.
+
+#### Physical attack
+
+A physical attack is a security incident that affects not only digital but also physical environments where the incident is deployed.
+
+**Types:**
+
+- Malicious USB cable
+
+- Malicious flash drive
+
+- Card cloning and skimming
+
+- Physical attacks fall under the asset security domain. 
+
+#### Adversarial artificial intelligence
+
+Adversarial artificial intelligence is a technique that manipulates artificial intelligence and machine learning technology to conduct attacks more efficiently. Adversarial artificial intelligence falls under both the communication and network security and the identity and access management domains.
+
+#### Supply-chain attack
+
+A supply-chain attack exploits vulnerabilities in third-party vendors to infiltrate systems, spreading malware through trusted updates or hardware. These attacks are costly and hard to detect, impacting multiple organizations downstream.
+
+#### Cryptographic attack
+
+A cryptographic attack affects secure forms of communication between a sender and intended recipient.
+
+**Types:** 
+
+- Birthday
+
+- Collision
+
+- Downgrade
+
+Cryptographic attacks fall under the communication and network security domain. 
+
+---
+
+### Threats
+
+A threat is any potential danger that could harm systems, data, or operations, whether from attacks (like hackers) or accidents (like human error).
+
+### Types
+
+#### Advanced persistent threats
+
+Advanced persistent threats (APTs) have significant expertise accessing an organization's network without authorization. APTs tend to research their targets (e.g., large corporations or government entities)  in advance and can remain undetected for an extended period of time. Their intentions and motivations can include:
+
+- Damaging critical infrastructure, such as the power grid and natural resources
+
+- Gaining access to intellectual property, such as trade secrets or patents
+
+#### Insider threats
+
+Insider threats abuse their authorized access to obtain data that may harm an organization. Their intentions and motivations can include: 
+
+- Sabotage
+
+- Corruption
+
+- Espionage
+
+- Unauthorized data access or leaks
+
+---
+
+#### Hacktivists
+
+Hacktivists are threat actors that are driven by a political agenda. They abuse digital technology to accomplish their goals, which may include: 
+
+- Demonstrations
+
+- Propaganda
+
+- Social change campaigns
+
+- Fame
+
+---
+
+#### Hackers
+
+A hacker is any person who uses computers to gain access to computer systems, networks, or data. They can be beginner or advanced technology professionals who use their skills for a variety of reasons. There are three main categories of hackers:
+
+**Authorized hackers** 
+
+These are also called ethical hackers. They follow a code of ethics and adhere to the law to conduct organizational risk evaluations. They are motivated to safeguard people and organizations from malicious threat actors.
+
+**Semi-authorized hackers** 
+
+These are considered researchers. They search for vulnerabilities but don’t take advantage of the vulnerabilities they find.
+
+**Unauthorized hackers**
+
+These are also called unethical hackers. They are malicious threat actors who do not follow or respect the law. Their goal is to collect and sell confidential data for financial gain. 
+
+**Note:** There are multiple hacker types that fall into one or more of these three categories.
+
+New and unskilled threat actors have various goals, including: 
+
+To learn and enhance their hacking skills
+
+To seek revenge
+
+To exploit security weaknesses by using existing malware, programming scripts, and other tactics 
+
+#### Types
+
+<img width="803" height="636" alt="image" src="https://github.com/user-attachments/assets/7d48061a-f793-4085-9c2f-076a2a1e50fc" />
+
+**White Hat Hackers:** Ethical hackers who legally test and improve security systems.
+
+**Black Hat Hackers:** Malicious hackers who exploit systems for personal or financial gain.
+
+**Gray Hat Hackers:** Operate between ethical and malicious hacking, often without explicit permission.
+
+**Script Kiddies:** Inexperienced hackers who use pre-made tools to attack systems.
+
+**Hacktivists:** Hackers driven by political or social causes to disrupt or expose targets.
+
+**State-Sponsored Hackers:** Government-backed hackers conducting cyber espionage or attacks.
+
+**Cyber Terrorists:** Hackers who cause fear and large-scale disruption for ideological goals.
+
+
+
 

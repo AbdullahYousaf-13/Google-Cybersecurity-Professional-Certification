@@ -5,7 +5,7 @@ Explore the cybersecurity profession, including significant events that led to t
 
 ---
 
-## Module 1: 
+## Module 1
 **Welcome to the Exciting World of Cybersecurity**
 
 Begin your journey into cybersecurity! You'll explore the cybersecurity field, and learn about the job responsibilities of cybersecurity professionals.
@@ -14,7 +14,7 @@ Begin your journey into cybersecurity! You'll explore the cybersecurity field, a
 
 ---
 
-## Module 2:
+## Module 2
 **The Evolution of Cybersecurity**
 
 Five icons show the course followed by the four modules sequentially from left to right with module 2 highlighted.
@@ -24,7 +24,7 @@ You will explore how cybersecurity threats have appeared and evolved alongside t
 
 ---
 
-## Module 3: 
+## Module 3
 **Protect Against Threats, Risks, and Vulnerabilities**
 
 Five icons show the course followed by the four modules sequentially from left to right with module 3 highlighted.
@@ -34,7 +34,7 @@ You will learn about security frameworks and controls, which are used to mitigat
 
 ---
 
-## Module 4: 
+## Module 4
 **Cybersecurity tools and programming languages**
 
 Five icons show the course followed by the four modules sequentially from left to right with module 4 highlighted.
@@ -43,8 +43,11 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 <img width="782" height="236" alt="image" src="https://github.com/user-attachments/assets/34600ebd-6374-413b-a02b-59c5c93de7cd" />
 
 ---
+---
 
-## In this course, you will:
+## Module 1
+
+### In this course, you will
 - Define the field of security
 - Recognize core skills and knowledge needed to become a security analyst
 - Identify how security attacks impact business operations
@@ -53,19 +56,18 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 
 ---
 
-## Skill Sets:
+### Skill Sets
 - Communicating effectively
 - Collaborating with others
 - Identifying threats, risks, and vulnerabilities
 - Problem-solving
 
 ---
----
 
-## Cybersecurity Glossary
+### Cybersecurity Cheat Sheet
 
 **Terms and Definitions**
-### **A**  
+#### **A**  
 **Absolute file path**: The full file path, which starts from the root  
 **Access controls**: Security controls that manage access, authorization, and accountability of information  
 **Active packet sniffing**: A type of attack where data packets are manipulated in transit  
@@ -101,7 +103,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Automation**: The use of technology to reduce human and manual effort to perform common and repetitive tasks  
 **Availability**: The idea that data is accessible to those who are authorized to access it  
 
-### **B**  
+#### **B**  
 **Baiting**: A social engineering tactic that tempts people into compromising their security  
 **Bandwidth**: The maximum data transmission capacity over a network, measured by bits per second  
 **Baseline configuration (baseline image)**: A documented set of specifications within a system that is used as a basis for future builds, releases, and updates  
@@ -123,7 +125,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Business continuity plan (BCP)**: A document that outlines the procedures to sustain business operations during and after a significant disruption  
 **Business Email Compromise (BEC)**: A type of phishing attack where a threat actor impersonates a known source to obtain financial advantage  
 
-### **C**  
+#### **C**  
 **Career Dreamer**: An experimental tool that uses AI to make career exploration easier and more personalized  
 **Career identity statement**: A few sentences about yourself that provide a quick but insightful overview of your key skills, interests, career goals, and what you're passionate about  
 **Case interview**: An interview type designed to evaluate your problem-solving, analytical, and communication skills by presenting you with real-world business challenges to analyze and solve  
@@ -165,7 +167,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **CVE Numbering Authority (CNA)**: An organization that volunteers to analyze and distribute information on eligible CVEs  
 **Cybersecurity (or security)**: The practice of ensuring confidentiality, integrity, and availability of information by protecting networks, devices, people, and data from unauthorized access or criminal exploitation  
 
-### **D**  
+#### **D**  
 **Data**: Information that is translated, processed, or stored by a computer  
 **Data at rest**: Data not currently being accessed  
 **Data controller**: A person that determines the procedure and purpose for processing data  
@@ -199,7 +201,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Domain Name System (DNS)**: A networking protocol that translates internet domain names into IP addresses  
 **Dropper**: A type of malware that comes packed with malicious code which is delivered and installed onto a target system  
 
-### **E**  
+#### **E**  
 **Elevator pitch**: A brief summary of your experience, skills, and background  
 **Encapsulation**: A process performed by a VPN service that protects your data by wrapping sensitive data in other data packets  
 **Encryption**: The process of converting data from a readable format to an encoded format  
@@ -214,7 +216,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Exposure**: A mistake that can be exploited by a threat  
 **External threat**: Anything outside the organization that has the potential to harm organizational assets  
 
-### **F**  
+#### **F**  
 **False negative**: A state where the presence of a threat is not detected  
 **False positive**: An alert that incorrectly detects the presence of a threat  
 **Fileless malware**: Malware that does not need to be installed by the user because it uses legitimate programs that are already installed to infect a computer  
@@ -228,7 +230,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Forward proxy server**: A server that regulates and restricts a person’s access to the internet  
 **Function**: A section of code that can be reused in a program  
 
-### **G**  
+#### **G**  
 **Gemini**: A generative AI model that can understand and combine various types of information, including text, code, audio, images, and video  
 **Gemini Deep Research**: A feature within the Gemini apps that allows users to conduct in-depth research by browsing numerous websites, analyzing the information, and generating multi-page reports  
 **Gemini Live**: A feature in the Gemini app that allows for natural, real-time voice conversations  
@@ -237,7 +239,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Graphical user interface (GUI)**: A user interface that uses icons on the screen to manage different tasks on the computer  
 **Growth mindset**: A commitment to ongoing learning and development  
 
-### **H**  
+#### **H**  
 **Hacker**: Any person who uses computers to gain access to computer systems, networks, or data  
 **Hacktivist**: A person who uses hacking to achieve a political goal  
 **Hard drive**: A hardware component used for long-term memory  
@@ -253,7 +255,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Hypertext Transfer Protocol (HTTP)**: An application layer protocol that provides a method of communication between clients and website servers  
 **Hypertext Transfer Protocol Secure (HTTPS)**: A network protocol that provides a secure method of communication between clients and website servers  
 
-### **I**  
+#### **I**  
 **Identify**: A NIST core function related to management of cybersecurity risk and its effect on an organization’s people and assets  
 **Identity and access management (IAM)**: A collection of processes and technologies that helps organizations manage digital identities in their environment  
 **IEEE 802.11 (Wi-Fi)**: A set of standards that define communication for wireless LANs  
@@ -292,18 +294,18 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Iterate**: To repeat a process or set of instructions, often with the aim of improvement or reaching a desired outcome  
 **Iterative statement**: Code that repeatedly executes a set of instructions  
 
-### **J**  
+#### **J**  
 **Job search plan**: A document or checklist that outlines the steps you need to take to effectively manage your job search  
 **Job search platforms**: Websites used to search for and apply for jobs  
 **Job search portfolio**: A folder you create in your Google Drive for all of the materials you create in this course to keep you organized and prepared throughout the job search process  
 **Job search tracker**: A system to organize application information and materials  
 
-### **K**  
+#### **K**  
 **KALI LINUX ™**: An open-source distribution of Linux that is widely used in the security industry  
 **Kernel**: The component of the Linux OS that manages processes and memory  
 **Key-value pair**: A set of data that represents two linked items: a key, and its corresponding value  
 
-### **L**  
+#### **L**  
 **Legacy operating system**: An operating system that is outdated but still being used  
 **Lessons learned meeting**: A meeting that includes all involved parties after a major incident  
 **Library**: A collection of modules that provide code users can access in their programs  
@@ -321,7 +323,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Loop condition**: The part of a loop that determines when the loop terminates  
 **Loop variable**: A variable that is used to control the iterations of a loop  
 
-### **M**  
+#### **M**  
 **Malware**: Software designed to harm devices or networks  
 **Malware infection**: An incident type that occurs when malicious software designed to disrupt a system infiltrates an organization’s computers or network  
 **Media Access Control (MAC) address**: A unique alphanumeric identifier that is assigned to each physical device on a network  
@@ -333,7 +335,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Monitor**: The seventh step of the NIST RMF that means be aware of how systems are operating  
 **Multi-factor authentication (MFA)**: A security measure that requires a user to verify their identity in two or more ways to access a system or network  
 
-### **N**  
+#### **N**  
 **nano**: A command-line file editor that is available by default in many Linux distributions  
 **National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)**: A voluntary framework that consists of standards, guidelines, and best practices to manage cybersecurity risk  
 **National Institute of Standards and Technology (NIST) Incident Response Lifecycle**: A framework for incident response consisting of four phases: Preparation; Detection and Analysis; Containment, Eradication and Recovery, and Post-incident activity  
@@ -354,7 +356,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **NotebookLM**: A personalized AI research assistant that answers questions and generates insights based on the sources you upload  
 **Numeric data**: Data consisting of numbers  
 
-### **O**  
+#### **O**  
 **OAuth**: An open-standard authorization protocol that shares designated access between applications  
 **Object**: A data type that stores data in a comma-separated list of key-value pairs  
 **On-path attack**: An attack where a malicious actor places themselves in the middle of an authorized connection and intercepts or alters the data in transit  
@@ -369,7 +371,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Output**: The result produced by prompting an AI tool to generate text or an image or complete some other task  
 **OWASP Top 10**: A globally recognized standard awareness document that lists the top 10 most critical security risks to web applications  
 
-### **P**  
+#### **P**  
 **Package**: A piece of software that can be combined with other packages to form an application  
 **Package manager**: A tool that helps users install, manage, and remove packages or applications  
 **Packet capture (P-cap)**: A file containing data packets intercepted from an interface or network  
@@ -418,11 +420,11 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Public key infrastructure (PKI)**: An encryption framework that secures the exchange of online information  
 **Python Standard Library**: An extensive collection of Python code that often comes packaged with Python  
 
-### **Q**  
+#### **Q**  
 **Query**: A request for data from a database table or a combination of tables  
 **Quid pro quo**: A type of baiting used to trick someone into believing that they’ll be rewarded in return for sharing access, information, or money  
 
-### **R**  
+#### **R**  
 **Rainbow table**: A file of pre-generated hash values and their associated plaintext  
 **Random Access Memory (RAM)**: A hardware component used for short-term memory  
 **Ransomware**: A malicious attack where threat actors encrypt an organization’s data and demand payment to restore access  
@@ -450,7 +452,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Root user (or superuser)**: A user with elevated privileges to modify the system  
 **Router**: A network device that connects multiple networks together  
 
-### **S**  
+#### **S**  
 **Salting**: An additional safeguard that’s used to strengthen hash functions  
 **Scareware**: Malware that employs tactics to frighten users into infecting their device  
 **Search Processing Language (SPL)**: Splunk’s query language  
@@ -518,7 +520,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Syntax**: The rules that determine what is correctly structured in a computing language  
 **Syntax error**: An error that involves invalid usage of a programming language  
 
-### **T**  
+#### **T**  
 **Tailgating**: A social engineering tactic in which unauthorized people follow an authorized person into a restricted area  
 **TCP/IP model**: A framework used to visualize how data is organized and transmitted across a network  
 **tcpdump**: A command-line network protocol analyzer  
@@ -539,7 +541,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Tuple data**: Data structure that consists of a collection of data that cannot be changed  
 **Type error**: An error that results from using the wrong data type  
 
-### **U**  
+#### **U**  
 **Ubuntu**: An open-source, user-friendly distribution that is widely used in security and other industries  
 **Unauthorized access**: An incident type that occurs when an individual gains digital or physical access to a system or application without permission  
 **Uncontrolled zone**: Any network outside your organization's control  
@@ -551,7 +553,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **User interface**: A program that allows the user to control the functions of the operating system  
 **User provisioning**: The process of creating and maintaining a user's digital identity  
 
-### **V**  
+#### **V**  
 **Variable**: A container that stores data  
 **Virtual machine (VM)**: A virtual version of a physical computer  
 **Virtual Private Network (VPN)**: A network security service that changes your public IP address and hides your virtual location so that you can keep your data private when you are using a public network like the internet  
@@ -564,7 +566,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **Vulnerability management**: The process of finding and patching vulnerabilities  
 **Vulnerability scanner**: Software that automatically compares existing common vulnerabilities and exposures against the technologies on the network  
 
-### **W**  
+#### **W**  
 **Watering hole attack**: A type of attack when a threat actor compromises a website frequently visited by a specific group of users  
 **Web-based exploits**: Malicious code or behavior that’s used to take advantage of coding flaws in a web application  
 **Whaling**: A category of spear phishing attempts that are aimed at high-ranking executives in an organization  
@@ -575,21 +577,20 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 **World-writable file**: A file that can be altered by anyone in the world  
 **Worm**: Malware that can duplicate and spread itself across systems on its own  
 
-### **X**  
+#### **X**  
 **X-Y-Z approach**: A formula or technique that helps you structure your accomplishments to clearly showcase your impact, especially in an interview or job application materials; X= accomplishment or action; Y = quantifiable result; Z = method or skills used  
 
-### **Y**  
+#### **Y**  
 **YARA-L**: A computer language used to create rules for searching through ingested log data  
 
-### **Z**  
+#### **Z**  
 **Zero-day**: An exploit that was previously unknown
 
 ---
----
 
-## Cybersecurity Skills Summary
+### Cybersecurity Skills Summary
 
-### Transferable Skills
+#### Transferable Skills
 
 **Communication** – Explain risks to both technical and non-technical audiences.
 
@@ -601,9 +602,7 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 
 **Diverse Perspectives** – Collaborate for better security solutions.
 
----
-
-### Technical Skills
+#### Technical Skills
 
 **Programming (Python/SQL)** – Automate tasks and analyze threats.
 
@@ -615,10 +614,57 @@ You’ll discover common tools used by cybersecurity analysts to identify and el
 
 **Incident Response** – Follow protocols to investigate and resolve breaches.
 
----
-
-### Key Takeaway:
+#### Key Takeaway:
 
 A mix of soft skills (communication, problem-solving) and technical expertise (SIEM, programming) is essential for cybersecurity success.
 
+---
+
+### Keep organizations secure
+
+**Analytical thinking**
+Security analysts often use analytical thinking, which means to think carefully and thoroughly. Analysts use this skill when monitoring and securing computer and network systems, responding to potential threats, defining system privileges, and determining ways to mitigate risk.
+
+**Collaboration**
+Collaboration means working with stakeholders and other team members. Security analysts often use this skill when responding to an active threat. They'll work with others when blocking unauthorized access and ensuring any compromised systems are restored.
+
+**Malware prevention**
+When a specific threat or vulnerability is identified, an analyst might install prevention software, which is software that works to proactively prevent a threat from occurring. Because malware is designed to harm devices or networks, malware prevention is essential.
+
+**Communication**
+As an analyst prevents and encounters threats, risks, or vulnerabilities, they document and report findings. A report might detail attempts to secure systems, test weak points, or offer solutions for system improvement. When reporting findings, strong communication skills are important.
+
+**Understanding programming languages**
+Analysts may sometimes work with software development teams to analyze and support security, install software, and set up appropriate processes. When involved with software development projects, it can be helpful for an analyst to understand programming languages.
+
+**Using SIEM tools**
+When security analysts need to review vulnerabilities, they conduct a periodic security audit. This is a review of an organization’s records, activities, and related documents. During audits, Security Information and Event Management (SIEM) tools help analysts better understand security threats, risks, and vulnerabilities.
+
+---
+
+### Terms and definitions from Course 1
+
+**Cybersecurity (or Security):** The practice of ensuring confidentiality, integrity, and availability of information by protecting networks, devices, people, and data from unauthorized access or criminal exploitation
+
+**Cloud security:** The process of ensuring that assets stored in the cloud are properly configured and access to those assets is limited to authorized users
+
+**Internal threat:** A current or former employee, external vendor, or trusted partner who poses a security risk
+
+**Network security:** The practice of keeping an organization's network infrastructure secure from unauthorized access
+
+**Personally identifiable information (PII):** Any information used to infer an individual’s identity
+
+**Security posture:** An organization’s ability to manage its defense of critical assets and data and react to change 
+
+**Sensitive personally identifiable information (SPII):** A specific type of PII that falls under stricter handling guidelines
+
+**Technical skills:** Skills that require knowledge of specific tools, procedures, and policies 
+
+**Threat:** Any circumstance or event that can negatively impact assets
+
+**Threat actor:** Any person or group who presents a security risk
+
+**Transferable skills:** Skills from other areas that can apply to different careers 
+
+---
 

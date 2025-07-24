@@ -575,3 +575,109 @@ These are guidelines used for building plans to help mitigate risks and threats 
 ---
 ---
 
+## Module 4
+
+### Tools for protecting business operations
+
+In this reading, you’ll learn more about how technical skills and tools help security analysts mitigate risks.
+
+#### An entry-level analyst’s toolkit
+
+Every organization may provide a different toolkit, depending on its security needs. As a future analyst, it’s important that you are familiar with industry standard tools and can demonstrate your ability to learn how to use similar tools in a potential workplace. 
+
+**Security information and event management (SIEM) tools**
+
+A SIEM tool is an application that collects and analyzes log data to monitor critical activities in an organization. A log is a record of events that occur within an organization’s systems. Depending on the amount of data you’re working with, it could take hours or days to filter through log data on your own. SIEM tools reduce the amount of data an analyst must review by providing alerts for specific types of threats, risks, and vulnerabilities.
+
+SIEM tools provide a series of dashboards that visually organize data into categories, allowing users to select the data they wish to analyze. Different SIEM tools have different dashboard types that display the information you have access to. 
+
+**Network protocol analyzers (packet sniffers)**
+
+A network protocol analyzer, also known as a packet sniffer, is a tool designed to capture and analyze data traffic in a network. This means that the tool keeps a record of all the data that a computer within an organization's network encounters.
+
+**Playbooks**
+A playbook is a manual that provides details about any operational action, such as how to respond to a security incident. Organizations usually have multiple playbooks documenting processes and procedures for their teams to follow. Playbooks vary from one organization to the next, but they all have a similar purpose: To guide analysts through a series of steps to complete specific security-related tasks. 
+
+**Programming**
+
+Programming is a process that can be used to create a specific set of instructions for a computer to execute tasks. Security analysts use programming languages, such as Python, to execute automation. Automation is the use of technology to reduce human and manual effort in performing common and repetitive tasks. Automation also helps reduce the risk of human error.
+
+Another programming language used by analysts is called Structured Query Language (SQL). SQL is used to create, interact with, and request information from a database. A database is an organized collection of information or data. There can be millions of data points in a database. A data point is a specific piece of information. 
+
+**Operating systems**
+
+An operating system is the interface between computer hardware and the user. Linux®, macOS®, and Windows are operating systems. They each offer different functionality and user experiences. 
+
+**Web vulnerability**
+
+A web vulnerability is a unique flaw in a web application that a threat actor could exploit by using malicious code or behavior, to allow unauthorized access, data theft, and malware deployment.
+
+**Antivirus software**
+
+Antivirus software is a software program used to prevent, detect, and eliminate malware and viruses. It is also called anti-malware. Depending on the type of antivirus software, it can scan the memory of a device to find patterns that indicate the presence of malware. 
+
+**Intrusion detection system**
+An intrusion detection system (IDS) is an application that monitors system activity and alerts on possible intrusions. The system scans and analyzes network packets, which carry small amounts of data through a network. The small amount of data makes the detection process easier for an IDS to identify potential threats to sensitive data.
+
+**Encryption**
+
+Encryption makes data unreadable and difficult to decode for an unauthorized user; its main goal is to ensure confidentiality of private data. Encryption is the process of converting data from a readable format to a cryptographically encoded format. Cryptographic encoding means converting plaintext into secure ciphertext. Plaintext is unencrypted information and secure ciphertext is the result of encryption.  
+
+**Penetration testing**
+
+Penetration testing, also called pen testing, is the act of participating in a simulated attack that helps identify vulnerabilities in systems, networks, websites, applications, and processes. It is a thorough risk assessment that can evaluate and identify external and internal threats as well as weaknesses.
+
+---
+
+### Portfolio projects
+
+As previously mentioned, you will have multiple opportunities throughout the certificate program to develop items to include in your portfolio. These opportunities include:
+
+- Drafting a professional statement
+
+- Conducting a security audit
+
+- Analyzing network structure and security
+
+- Using Linux commands to manage file permissions
+
+- Applying filters to SQL queries
+
+- Identifying vulnerabilities for a small business
+
+- Documenting incidents with an incident handler’s journal 
+
+- Importing and parsing a text file in a security-related scenario
+
+- Creating or revising a resume
+
+---
+
+### Terms and definitions from Module 4
+
+**Antivirus software:** A software program used to prevent, detect, and eliminate malware and viruses
+
+**Database:** An organized collection of information or data
+
+**Data point:** A specific piece of information
+
+**Intrusion detection system (IDS):** An application that monitors system activity and alerts on possible intrusions
+
+**Linux:** An open-source operating system
+
+**Log:** A record of events that occur within an organization’s systems 
+
+**Network protocol analyzer (packet sniffer):** A tool designed to capture and analyze data traffic within a network
+
+**Order of volatility:** A sequence outlining the order of data that must be preserved from first to last
+
+**Programming:** A process that can be used to create a specific set of instructions for a computer to execute tasks
+
+**Protecting and preserving evidence:** The process of properly working with fragile and volatile digital evidence
+
+**Security information and event management (SIEM):** An application that collects and analyzes log data to monitor critical activities in an organization
+
+**SQL (Structured Query Language):** A query language used to create, interact with, and request information from a database
+
+---
+---

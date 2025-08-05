@@ -189,3 +189,65 @@ Core principles for security professionals
 ---
 ---
 
+## Module 2
+
+### The relationship between frameworks and controls
+Previously, you learned how organizations use security frameworks and controls to protect against threats, risks, and vulnerabilities. This included discussions about the National Institute of Standards and Technology’s (NIST’s) Risk Management Framework (RMF) and Cybersecurity Framework (CSF), as well as the confidentiality, integrity, and availability (CIA) triad. In this reading, you will further explore security frameworks and controls and how they are used together to help mitigate organizational risk.
+
+#### Overview
+Security frameworks and controls work together to mitigate organizational risks. Frameworks provide guidelines, while controls implement specific safeguards.
+
+#### Security Frameworks
+Guidelines for building risk mitigation plans that help organizations:
+- Adhere to compliance laws (e.g., HIPAA for healthcare)
+- Protect data and privacy
+- Examples: NIST RMF, NIST CSF, CTF, ISO/IEC 27001
+
+#### Security Controls
+Safeguards that reduce specific security risks:
+- Implemented alongside frameworks
+- Three main types:
+  1. **Physical**: Gates, CCTV, access badges
+  2. **Technical**: Firewalls, MFA, antivirus
+  3. **Administrative**: Separation of duties, authorization policies
+ 
+#### Key Takeaways
+1. **Frameworks** = Strategic guidelines (e.g., NIST, ISO)
+2. **Controls** = Tactical safeguards (physical/technical/admin)
+3. Effective security requires both frameworks and controls
+
+---
+
+### OWASP Security Principles  
+
+#### Core Principles:  
+- **Minimize attack surface**: Reduce exploitable vulnerabilities  
+- **Least privilege**: Grant minimal necessary access  
+- **Defense in depth**: Layer multiple security controls  
+- **Separation of duties**: Split critical tasks across personnel  
+- **Keep security simple**: Avoid complexity-induced risks  
+- **Fix issues correctly**: Root cause analysis → remediation  
+
+#### Additional Principles:  
+1. **Secure defaults**:  
+   - Default configurations = most secure state  
+   - Example: Password complexity enabled by default  
+
+2. **Fail securely**:  
+   - Controls should default to "deny" on failure  
+   - Example: Firewall blocks all traffic if crashes  
+
+3. **Don’t trust services**:  
+   - Verify third-party security (e.g., data validation)  
+   - Example: Audit vendor APIs before integration  
+
+4. **Avoid security by obscurity**:  
+   - Never rely on secrecy (e.g., hidden code)  
+   - Example: Open-source apps still need encryption/MFA  
+
+#### Analyst Application:  
+- Log analysis  
+- SIEM monitoring  
+- Vulnerability scanning  
+
+**Reference**: [OWASP Top 10](https://owasp.org/www-project-top-ten/)  

@@ -1,4 +1,4 @@
-# Foundation of Cybersecurity (Course 1)
+# Foundation of Cybersecurity
 
 **Description:**
 

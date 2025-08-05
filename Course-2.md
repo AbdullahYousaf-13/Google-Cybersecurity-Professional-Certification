@@ -88,43 +88,43 @@ The process of identifying, assessing, and controlling threats to an organizatio
 A primary goal of organizations is to protect assets. An asset is an item perceived as having value to an organization. Assets can be digital or physical.  
 
 #### Examples of digital assets include:  
-Electronic data or systems that hold value  
+Electronic data or systems that hold value:
 - Social Security Numbers (SSNs)  
 - Dates of birth  
 - Bank account numbers  
 - Mailing addresses  
 
 #### Examples of physical assets include:  
-Tangible items that require protection  
+Tangible items that require protection:
 - Payment kiosks  
 - Servers  
 - Desktop computers  
 - Office spaces  
 
 #### Common risk management strategies:  
-Approaches to handle potential threats  
+Approaches to handle potential threats:
 - **Acceptance**: Acknowledging risk when mitigation costs outweigh impact  
 - **Avoidance**: Eliminating activities that could trigger risk  
 - **Transference**: Shifting risk to third parties (e.g., insurance)  
 - **Mitigation**: Implementing controls to reduce risk impact  
 
 #### Risk management frameworks:  
-Standardized methodologies for risk assessment  
+Standardized methodologies for risk assessment:
 - **NIST RMF**: U.S. government standard for security controls  
 - **HITRUST**: Healthcare-specific compliance framework  
 
 ---
 
 ### Today's most common threats, risks, and vulnerabilities  
-Key categories of organizational exposures  
+Key categories of organizational exposures:
 
 #### Threats  
-Potential events/circumstances that can harm assets  
+Potential events/circumstances that can harm assets:
 - **Insider threats**: Authorized users misusing access  
 - **Advanced persistent threats (APTs)**: Long-term unauthorized access  
 
 #### Risks  
-Factors that could compromise CIA triad of assets  
+Factors that could compromise CIA triad of assets:  
 - **External risk**: Threats from outside the organization  
 - **Internal risk**: Employees/vendors creating exposures  
 - **Legacy systems**: Unsupported/outdated technology  
@@ -132,14 +132,14 @@ Factors that could compromise CIA triad of assets
 - **Software compliance**: Unpatched/license-violating systems  
 
 #### Vulnerabilities  
-Weaknesses that threats can exploit  
+Weaknesses that threats can exploit:
 - **ProxyLogon**: Microsoft Exchange auth bypass  
 - **ZeroLogon**: Windows Netlogon flaw  
 - **Log4Shell**: Remote code execution in Java  
 - **PetitPotam**: NTLM authentication hijacking  
 
 ### Key takeaways  
-Core principles for security professionals  
+Core principles for security professionals:
 - Continuous **monitoring** (SIEM, vulnerability scanners)  
 - Timely **patching** of systems  
 - Employee **training** against insider threats  
@@ -206,7 +206,7 @@ Guidelines for building risk mitigation plans that help organizations:
 #### Security Controls
 Safeguards that reduce specific security risks:
 - Implemented alongside frameworks
-- Three main types:
+- Three main types
   1. **Physical**: Gates, CCTV, access badges
   2. **Technical**: Firewalls, MFA, antivirus
   3. **Administrative**: Separation of duties, authorization policies
@@ -220,7 +220,7 @@ Safeguards that reduce specific security risks:
 
 ### OWASP Security Principles  
 
-#### Core Principles:  
+#### Core Principles
 - **Minimize attack surface**: Reduce exploitable vulnerabilities  
 - **Least privilege**: Grant minimal necessary access  
 - **Defense in depth**: Layer multiple security controls  
@@ -228,24 +228,24 @@ Safeguards that reduce specific security risks:
 - **Keep security simple**: Avoid complexity-induced risks  
 - **Fix issues correctly**: Root cause analysis → remediation  
 
-#### Additional Principles:  
-1. **Secure defaults**:  
+#### Additional Principles
+1. **Secure defaults**
    - Default configurations = most secure state  
    - Example: Password complexity enabled by default  
 
-2. **Fail securely**:  
+2. **Fail securely**
    - Controls should default to "deny" on failure  
    - Example: Firewall blocks all traffic if crashes  
 
-3. **Don’t trust services**:  
+3. **Don’t trust services**
    - Verify third-party security (e.g., data validation)  
    - Example: Audit vendor APIs before integration  
 
-4. **Avoid security by obscurity**:  
+4. **Avoid security by obscurity**
    - Never rely on secrecy (e.g., hidden code)  
    - Example: Open-source apps still need encryption/MFA  
 
-#### Analyst Application:  
+#### Analyst Application
 - Log analysis  
 - SIEM monitoring  
 - Vulnerability scanning  

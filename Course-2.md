@@ -38,3 +38,54 @@ You'll learn about the purposes and common uses of playbooks. You'll also explor
 <img width="479" height="154" alt="image" src="https://github.com/user-attachments/assets/c535fa3a-6e29-494d-9ada-a5311302f6c1" />
 
 ---
+---
+
+## Module 1
+
+### Security domains cybersecurity analysts need to know
+
+As an analyst, you can explore various areas of cybersecurity that interest you. One way to explore those areas is by understanding different security domains and how they’re used to organize the work of security professionals. In this reading you will learn more about CISSP’s eight security domains and how they relate to the work you’ll do as a security analyst. 
+
+<img width="542" height="483" alt="image" src="https://github.com/user-attachments/assets/0636b476-826a-4367-9764-a2428cd146fc" />
+
+### 1. Security & Risk Management
+- **Security Posture**: Defend assets & adapt to change  
+- **Key Elements**:  
+  - Security goals, risk mitigation, compliance, business continuity  
+  - Legal regulations, ethics  
+- **InfoSec Processes**: Incident response, vulnerability management, cloud/application security  
+- **Example**: GDPR compliance for PII handling  
+
+### 2. Asset Security
+- **Focus**: Secure data lifecycle (storage, retention, destruction)  
+- **Actions**: Backups, recovery plans, exposure management  
+
+### 3. Security Architecture & Engineering
+- **Goal**: Secure systems via design principles  
+- **Key Methods**:  
+  - Least privilege, zero trust, defense in depth  
+  - SIEM monitoring for threats  
+
+### 4. Communication & Network Security
+- **Scope**: Physical/wireless networks (on-site/remote/cloud)  
+- **Protections**: Access controls, secure remote connections  
+
+### 5. Identity & Access Management (IAM)
+- **Core Principle**: Least privilege access  
+- **Example**: Temporary data access for customer support  
+
+### 6. Security Assessment & Testing
+- **Activities**: Penetration tests, vulnerability scans, audits  
+- **Goal**: Identify risks before exploitation  
+
+### 7. Security Operations
+- **Focus**: Incident response & prevention  
+- **Tools**: SIEM, intrusion detection, forensics  
+- **Process**: Playbooks, lessons learned  
+
+### 8. Software Development Security
+- **Requirement**: Security at all SDLC stages  
+- **Methods**: Secure coding, QA testing, encryption checks  
+
+---
+

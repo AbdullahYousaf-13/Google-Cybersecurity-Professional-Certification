@@ -1,7 +1,8 @@
 # Play It Safe: Manage Security Risks
 
 ## Description
-welcome to **Play It Safe: Manage Security Risks**, the second course in the Google Cybersecurity Certificate.
+**Play It Safe: Manage Security Risks**, the second course in the Google Cybersecurity Certificate.
+
 By the end of this course, you will develop a greater understanding of the eight Certified Information Systems Security Professional (CISSP) security domains, as well as specific security frameworks and controls. You’ll also be introduced to how to use security tools and audits to help protect assets and data. These are key concepts in the cybersecurity field, and understanding them will help you keep organizations, and the people they serve, safe from threats, risks, and vulnerabilities.
 
 ---

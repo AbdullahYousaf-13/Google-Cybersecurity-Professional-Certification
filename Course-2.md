@@ -400,3 +400,57 @@ Three main categories to review during audits:
 
 ## Module 3
 
+### The Future of SIEM Tools
+
+#### Current SIEM Solutions
+- Collects and analyzes log data for real-time security monitoring
+- Requires human interaction for threat analysis
+- Offers multiple dashboard options for data management
+
+#### Future Developments
+1. **Cloud Integration**
+   - *Cloud-hosted*: Vendor-managed, internet-accessed
+   - *Cloud-native*: Built for cloud scalability/flexibility
+
+2. **IoT & AI/ML Impact**
+   - Expanding attack surfaces from IoT growth
+   - AI/ML enhancing threat detection and visualization
+
+3. **Automation (SOAR)**
+   - Faster incident response through automation
+   - Reduces manual workload for analysts
+
+#### Key Takeaways
+- Essential for organizational security monitoring
+- Cloud, AI, and automation are driving evolution
+- Professionals must stay updated on SIEM advancements
+
+---
+
+### Cybersecurity Tools: Open-Source vs Proprietary
+
+#### Open-Source Tools
+- **Free** to use with public collaboration
+- **Customizable**: Users can modify source code
+- **Examples**: 
+  - **Linux**: Open-source OS with command-line customization
+  - **Suricata**: Network threat detection software (by OISF)
+- **Security**: Public scrutiny often makes vulnerabilities harder to exploit
+
+#### Proprietary Tools
+- **Paid/licensed** with restricted access to source code
+- **Limited customization**: Only owners can modify core features
+- **Examples**: Splunk, Google SecOps (Chronicle)
+- **Updates**: Dependent on vendor timelines
+
+#### Common Misconceptions
+- **Myth**: Open-source is less secure  
+- **Reality**: Public transparency allows faster vulnerability fixes
+
+#### Key Takeaways
+- Both tool types are essential in cybersecurity  
+- Open-source offers flexibility; proprietary provides structured support  
+- Program will cover hands-on practice with both
+
+---
+

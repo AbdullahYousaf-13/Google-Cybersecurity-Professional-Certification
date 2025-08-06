@@ -219,6 +219,7 @@ Safeguards that reduce specific security risks:
 ---
 
 ### OWASP Security Principles  
+Open Worldwide Application Security Project is a non-profit foundation that works to improve software security.
 
 #### Core Principles
 - **Minimize attack surface**: Reduce exploitable vulnerabilities  

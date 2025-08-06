@@ -537,3 +537,139 @@ Chronicle is a cloud-native SIEM tool from Google that retains, analyzes, and se
 
 ---
 
+### Terms and definitions from Course 2, Module 3
+
+**Chronicle**: A cloud-native tool designed to retain, analyze, and search data
+
+**Incident response**: An organization's quick attempt to identify an attack, contain the damage, and correct the effects of a security breach
+
+**Log**: A record of events that occur within an organization's systems
+
+**Metrics**: Key technical attributes such as response time, availability, and failure rate, which are used to assess the performance of a software application
+
+**Operating system (OS)**: The interface between computer hardware and the user
+
+**Playbook**: A manual that provides details about any operational action
+
+**Security information and event management (SIEM)**: An application that collects and analyzes log data to monitor critical activities in an organization
+
+**Security orchestration, automation, and response (SOAR)**: A collection of applications, tools, and workflows that use automation to respond to security events
+
+**SIEM tools**: A software platform that collects, analyzes, and correlates security data from various sources across your IT infrastructure that helps identify and respond to security threats in real-time, investigate security incidents, and comply with security regulations
+
+**Splunk Cloud**: A cloud-hosted tool used to collect, search, and monitor log data
+
+**Splunk Enterprise**: A self-hosted tool used to retain, analyze, and search an organization's log data to provide security information and alerts in real-time
+
+---
+---
+
+## Module 4
+
+### Cybersecurity Playbooks
+
+#### Playbook Overview
+A playbook is a manual that provides details about any operational action. Essentially, a playbook provides a predefined and up-to-date list of steps to perform when responding to an incident.
+
+##### Components
+  - **Strategy**: Team roles/responsibilities.
+  - **Plan**: Task-specific execution guidelines.
+
+##### Key Feature: 
+"Living document" updated for:
+  - Identified failures
+  - Industry/regulatory changes
+  - Evolving threat tactics
+
+#### Types of Playbooks
+1. **Incident/Vulnerability Response**  
+   - Common for entry-level analysts.
+   - Aligns with business continuity plans.
+   - Steps include:  
+     - Preparation → Detection → Analysis → Containment → Eradication → Recovery  
+     - Post-incident review/coordination.
+
+2. Other Variants
+   - Organization/country-specific (e.g., ransomware, BEC, vishing).
+   - Compliance-driven (e.g., GDPR, sector-specific regulations).
+
+#### Risk Assessment
+- **Formula**: Risk = Likelihood × Threat Impact  
+- **Urgency**: Critical for forensic integrity and legal adherence.
+
+#### Key Takeaways
+- Ensures structured, compliant response.
+- Requires continuous refinement post-incident.
+- Global examples:  
+  - UK NCSC Incident Management  
+  - Australia’s Cyber Incident Response  
+  - Canada’s Ransomware Playbook  
+
+#### Resources
+- [NCSC (UK)](https://www.ncsc.gov.uk)  
+- [Australian Gov](https://www.cyber.gov.au)  
+- [JPCERT/CC (Japan)](https://www.jpcert.or.jp)  
+- [Canada Ransomware Playbook](https://www.cyber.gc.ca)
+
+---
+
+#### Incident Response Playbook Phases  
+
+1. **Preparation**  
+   - Establish protocols, tools, and team roles  
+   - Conduct training and tabletop exercises  
+
+2. **Detection & Analysis**  
+   - Identify security events through monitoring  
+   - Investigate to confirm incidents and assess impact  
+
+3. **Containment**  
+   - Short-term: Isolate affected systems  
+   - Long-term: Apply permanent fixes  
+
+4. **Eradication & Recovery**    
+   - Remove threats (malware, compromised accounts)  
+   - Restore systems with patches/updates  
+
+5. **Post-Incident Review**  
+   - Document root causes and lessons learned  
+   - Update playbooks and security controls  
+
+6. **Coordination**  
+   - Internal: Cross-team communication (legal/PR/IT)  
+   - External: Notify regulators, law enforcement, or customers if required  
+
+---
+
+### Playbooks, SIEM, and SOAR Tools  
+
+#### Playbooks & SIEM Tools
+- **Purpose**: Standardize incident response actions (e.g., ransomware recovery).  
+- **Integration**:  
+  - SIEM tools **detect** anomalies (e.g., unusual logins).  
+  - Playbooks **guide** analysts through predefined steps.  
+- **Features**: Include flowcharts, tables, and role-specific instructions.  
+
+#### Playbooks & SOAR Tools
+- **SOAR Function**: Automates repetitive tasks (e.g., blocking accounts after failed logins).  
+- **Workflow**:  
+  1. SOAR triggers automated response (e.g., account lockout).  
+  2. Playbooks direct **next steps** (e.g., user verification, system checks).  
+
+#### Key Takeaways  
+- **Playbooks** = Actionable checklists for consistent response.  
+- **SIEM** + Playbooks = Detect → Guide.  
+- **SOAR** + Playbooks = Automate → Resolve.  
+- **Outcome**: Faster mitigation, reduced human error, and asset protection.
+
+---
+
+### Terms and definitions from Module 4
+
+**Incident response**: An organization’s quick attempt to identify an attack, contain the damage, and correct the effects of a security breach
+
+**Playbook**: A manual that provides details about any operational action
+
+---
+---
+---

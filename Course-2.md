@@ -400,6 +400,32 @@ Three main categories to review during audits:
 
 ## Module 3
 
+### Log Analysis & SIEM Tools for Threat Management  
+
+#### **Key Log Sources**  
+1. **Firewall Logs**  
+   - Records incoming/outbound traffic connections (e.g., blocked intrusion attempts).  
+
+2. **Network Logs**  
+   - Tracks devices entering/leaving the network and internal service connections.  
+
+3. **Server Logs**  
+   - Captures events like logins, password requests, and service actions (email/websites).  
+
+#### **SIEM Tool Functions**  
+- **Centralized Monitoring**: Aggregates/logs from all sources into one platform.  
+- **Real-Time Analysis**: Detects anomalies (e.g., spike in failed logins).  
+- **Automated Alerts**: Flags threats for immediate response.  
+- **Efficiency**: Reduces manual log review with indexed data.  
+
+#### **Customization Requirement**  
+- Must be tailored to an organization’s specific threats and infrastructure.  
+
+#### **Upcoming in Program**  
+- Hands-on practice with SIEM tools and dashboards.  
+
+---
+
 ### The Future of SIEM Tools
 
 #### Current SIEM Solutions
@@ -451,6 +477,63 @@ Three main categories to review during audits:
 - Both tool types are essential in cybersecurity  
 - Open-source offers flexibility; proprietary provides structured support  
 - Program will cover hands-on practice with both
+
+---
+
+### SIEM Tools for Organizational Protection
+
+#### **Splunk Dashboards**
+Splunk is a Security Information and Event Management (SIEM) tool that collects, analyzes, and monitors log data from various sources (servers, networks, applications) to detect security threats.
+
+##### Splunk dashboards and their purposes
+
+1. **Security Posture Dashboard**  
+   - Tracks last 24hrs of security events  
+   - Identifies threats (e.g., suspicious IP activity)  
+
+2. **Executive Summary Dashboard**  
+   - Monitors organizational security health over time  
+   - Provides high-level insights for stakeholders  
+
+3. **Incident Review Dashboard**  
+   - Visual timeline of pre-incident patterns  
+   - Highlights high-risk items for immediate review  
+
+4. **Risk Analysis Dashboard**  
+   - Tracks risk objects (users/IPs/devices)  
+   - Flags anomalies (e.g., off-hours logins)  
+
+#### **Chronicle (Google) Dashboards**  
+Chronicle is a cloud-native SIEM tool from Google that retains, analyzes, and searches log data to identify potential security threats, risks, and vulnerabilities. Chronicle allows you to collect and analyze log data according to: 
+- A specific asset
+- A domain name
+- A user
+- An IP address
+
+##### Chronicle dashboards and their purposes
+
+1. **Enterprise Insights**  
+   - Scores IOCs (Indicators of Compromise) by confidence/severity  
+
+2. **Data Ingestion & Health**  
+   - Validates log source configurations and data flow  
+
+3. **IOC Matches**  
+   - Tracks top threats (domains/IPs/devices) to prioritize responses
+
+4. **Main Dashboard**
+   - Provides high-level summary of data ingestion, alerts, and event trends including spikes (e.g., failed logins) across logs/devices/IPs  
+
+5. **Rule Detections**  
+   - Lists alerts triggered by detection rules (e.g., malicious email attachments)  
+
+6. **User Sign-In Overview**  
+   - Detects anomalous access (e.g., simultaneous multi-location logins)  
+
+#### **Key Takeaways**  
+- SIEM dashboards **centralize threat data** for rapid analysis  
+- Enable prioritization of **high-risk incidents**  
+- Support **real-time monitoring** and **trend identification**
 
 ---
 

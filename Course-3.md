@@ -321,3 +321,120 @@ Visual representations of network architecture used by security professionals.
 
 ---
 
+### Components of Network Layer Communication
+
+#### Operations at the Network Layer (Layer 3)
+- The **Network Layer** is responsible for **addressing** and **delivering data packets** from the source host to the destination host across networks.
+- Uses **IP addresses** for routing packets through multiple routers until they reach the final destination.
+- IP addresses are stored in **routing tables** and found in the **IP header** of each packet.
+
+#### What is an IP Packet?
+- A **data packet** = unit of communication over a network.
+- IP packets:
+  - For **TCP**: often called **IP packets**
+  - For **UDP**: often called **datagrams**
+- All IP packets contain a **header** (with metadata) and **data** (the actual message).
+
+#### IPv4 Packet Structure
+An IPv4 packet consists of:
+- **Header** (20–60 bytes): Contains control information.
+- **Data**: Variable size, max total packet size = **65,535 bytes**
+
+#### IPv4 Header Fields (13 total):
+
+| **Field**                  | **Description**                                               |
+|----------------------------|---------------------------------------------------------------|
+| **Version (VER)**          | 4 bits – Indicates IPv4 protocol                              |
+| **Header Length (IHL)**    | Defines where header ends and data begins                     |
+| **Type of Service (ToS)**  | Prioritization info for routers                               |
+| **Total Length**           | Size of entire packet (header + data)                         |
+| **Identification**         | Uniquely identifies fragments of the same packet              |
+| **Flags**                  | Indicates if the packet is fragmented                         |
+| **Fragment Offset**        | Location of the fragment in original packet                   |
+| **Time to Live (TTL)**     | Limits lifespan of a packet in network (prevents loops)       |
+| **Protocol**               | Indicates which protocol (TCP, UDP, etc.) is used in the data |
+| **Header Checksum**        | Used to detect corruption in the header                       |
+| **Source IP Address**      | IP address of the sender                                      |
+| **Destination IP Address** | IP address of the recipient                                   |
+| **Options**                | Optional settings (used if IHL > 5)                           |
+
+#### Packet Routing and TTL
+- **Routers** use **IP headers** to determine where to forward packets.
+- Each time a packet passes through a router, its **TTL is decreased by 1**.
+- When TTL = 0, the packet is **discarded** to avoid infinite loops.
+
+#### IPv4 vs IPv6
+
+| **Feature**               | **IPv4**                               | **IPv6**                                        |
+|---------------------------|----------------------------------------|-------------------------------------------------|
+| **Address Format**        | Decimal, e.g., `192.168.0.1`           | Hexadecimal, e.g., `2001:0db8::ff21:0023:1234`  |
+| **Address Length**        | 32 bits (4 bytes)                      | 128 bits (16 bytes)                             |
+| **Total Addresses**       | ~4.3 billion                           | ~340 undecillion                                |
+| **Header Complexity**     | More complex                           | Simplified                                      |
+| **Security & Efficiency** | NAT required, potential collisions     | Built-in support for better routing & security  |
+
+<img width="683" height="389" alt="image" src="https://github.com/user-attachments/assets/2fab50e1-4569-44ed-9a2d-c9f708672d62" />
+
+**IPv6 Improvements:**
+- Solves **IPv4 address exhaustion**
+- Eliminates private address conflicts
+- Introduces **Flow Label** for special handling
+- Simpler header (removes fields like Identification, Flags, IHL)
+
+## Key Takeaways
+- The **network layer (Layer 3)** is critical for routing and addressing packets across networks.
+- **IP headers** carry vital metadata like source/destination addresses and protocol info.
+- Security professionals can analyze header data to:
+  - Identify suspicious traffic origins
+  - Understand protocol usage
+  - Detect corrupted or malformed packets
+- Understanding **IPv4 vs. IPv6** is essential for adapting to modern network architectures.
+
+---
+
+###Terms and Definitions – Course 3, Module 1
+
+**Bandwidth**: The maximum data transmission capacity over a network, measured by bits per second
+
+**Cloud computing**: The practice of using remote servers, application, and network services that are hosted on the internet instead of on local physical devices
+
+**Cloud network**: A collection of servers or computers that stores resources and data in remote data centers that can be accessed via the internet
+
+**Data packet**: A basic unit of information that travels from one device to another within a network
+
+**Hub**: A network device that broadcasts information to every device on the network
+
+**Internet Protocol (IP)**: A set of standards used for routing and addressing data packets as they travel between devices on a network
+
+**Internet Protocol (IP) address**: A unique string of characters that identifies the location of a device on the internet
+
+**Local Area Network (LAN)**: A network that spans small areas like an office building, a school, or a home
+
+**Media Access Control (MAC) address**: A unique alphanumeric identifier that is assigned to each physical device on a network
+
+**Modem**: A device that connects your router to the internet and brings internet access to the LAN
+
+**Network**: A group of connected devices
+
+**Open systems interconnection (OSI) model**: A standardized concept that describes the seven layers computers use to communicate and send data over the network
+
+**Packet sniffing**: The practice of capturing and inspecting data packets across a network
+
+**Port**: A software-based location that organizes the sending and receiving of data between devices on a network
+
+**Router**: A network device that connects multiple networks together
+
+**Speed**: The rate at which a device sends and receives data, measured by bits per second
+
+**Switch**: A device that makes connections between specific devices on a network by sending and receiving data between them
+
+**TCP/IP model**: A framework used to visualize how data is organized and transmitted across a network
+
+**Transmission Control Protocol (TCP)**: An internet communication protocol that allows two devices to form a connection and stream data
+
+**User Datagram Protocol (UDP)**: A connectionless protocol that does not establish a connection between devices before transmissions
+**Wide Area Network (WAN)**: A network that spans a large geographic area like a city, state, or country
+
+---
+---
+

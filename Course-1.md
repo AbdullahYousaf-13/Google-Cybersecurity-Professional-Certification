@@ -1,8 +1,9 @@
 # Foundation of Cybersecurity
 
 ## Description
-**Google Cybersecurity Certificate!** In this program, you will explore the growing field of cybersecurity, learn how cybersecurity is crucial to organizations and the people they serve, and develop relevant skills for a future career in the field. By completing the nine courses in this certificate program, you'll prepare for entry-level jobs in cybersecurity, such as cybersecurity analyst, security analyst, and security operations center (SOC) analyst. No prior experience in cybersecurity is required to complete this program.
+**Foundations of Cybersecurity**, the first course in the Google Cybersecurity Certificate. You’ve begun an exciting journey!
 
+In this course, you will learn the primary job responsibilities and core skills of those who work in the field of cybersecurity. You will explore the eight Certified Information Systems Security Professional (CISSP) security domains, various security frameworks and controls, as well as a foundational security model called the confidentiality, integrity, and availability (CIA) triad. You will also be introduced to some common tools used by security analysts that help protect organizations and people alike.
 ---
 
 ## Module 1

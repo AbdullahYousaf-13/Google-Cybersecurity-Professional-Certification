@@ -438,3 +438,29 @@ An IPv4 packet consists of:
 ---
 ---
 
+## Module 2
+
+### Common Network Protocols  
+Network protocols are sets of rules that govern communication between devices on a network. They define data structure, transmission order, and handling instructions.  
+
+#### Categories of Network Protocols  
+##### 1. Communication Protocols  
+   - **TCP (Transmission Control Protocol)**: Ensures reliable, connection-based data transmission using a three-way handshake (SYN, SYN/ACK, ACK). Operates at the transport layer.  
+   - **UDP (User Datagram Protocol)**: Connectionless protocol for fast transmissions (e.g., DNS queries). Less reliable than TCP. Transport layer.  
+   - **HTTP (Hypertext Transfer Protocol)**: Application layer protocol for client-server communication (port 80). Insecure; often replaced by HTTPS.  
+   - **DNS (Domain Name System)**: Translates domain names to IP addresses. Uses UDP (port 53) by default, switches to TCP for large replies. Application layer.  
+
+##### 2. Management Protocols  
+   - **SNMP (Simple Network Management Protocol)**: Monitors/manages network devices (e.g., bandwidth usage, configurations). Application layer.  
+   - **ICMP (Internet Control Message Protocol)**: Reports transmission errors (e.g., `ping` command). Internet layer.  
+
+##### 3. Security Protocols  
+   - **HTTPS (HTTP Secure)**: Encrypts HTTP traffic using SSL/TLS (port 443). Application layer.  
+   - **SFTP (Secure File Transfer Protocol)**: Encrypts file transfers via SSH (port 22). Uses AES encryption. Application layer.  
+
+#### Key Takeaways  
+- Protocols ensure standardized communication but may have vulnerabilities (e.g., DNS spoofing).  
+- Security analysts must understand protocols to mitigate risks (e.g., enforcing HTTPS over HTTP).
+
+---
+

@@ -188,3 +188,68 @@ Visual representations of network architecture used by security professionals.
 
 #### More Info
 - [Google Cloud](https://cloud.google.com)
+
+---
+
+### TCP/IP Model
+
+#### What is the TCP/IP Model?
+- Conceptual framework for data communication across networks.
+- Helps visualize how data is transmitted and where issues may occur.
+- Comprises 4 layers: **Application**, **Transport**, **Internet**, and **Network Access**.
+
+<img width="536" height="373" alt="image" src="https://github.com/user-attachments/assets/75612767-07c1-4436-89fe-be74e6f3999e" />
+
+#### TCP/IP Model Layers & Key Protocols
+
+##### Application Layer
+- Combines OSI’s application, presentation, and session layers.
+- **Purpose**: Handles high-level protocols and user interaction.
+- **Common Protocols**:
+  - HTTP – Web browsing
+  - FTP – File transfers
+  - SMTP – Email sending
+  - SSH – Secure remote access
+  - DNS – Domain resolution
+
+##### Transport Layer
+- **Purpose**: Provides end-to-end communication and data transfer.
+- **Key Protocols**:
+  - **TCP (Transmission Control Protocol)**: Reliable, connection-based
+  - **UDP (User Datagram Protocol)**: Faster, connectionless, used in streaming
+
+##### Internet Layer
+- **Purpose**: Determines routing and delivery of data across networks.
+- **Key Protocols**:
+  - **IP (Internet Protocol)** – Sends packets to correct destination
+  - **ICMP (Internet Control Message Protocol)** – Error reporting, diagnostics (e.g., `ping`)
+
+##### Network Access Layer (a.k.a. Data Link Layer)
+- **Purpose**: Handles physical transmission of data and MAC addressing.
+- **Key Protocols/Tools**:
+  - **ARP** – Resolves IP to MAC addresses
+  - Involves hardware like switches, cables, NICs
+
+#### TCP/IP vs. OSI Model
+
+| **OSI Model Layer**                    | **TCP/IP Equivalent Layer**  |
+|----------------------------------------|------------------------------|
+| Application, Presentation, Session     | Application                  |
+| Transport                              | Transport                    |
+| Network                                | Internet                     |
+| Data Link, Physical                    | Network Access               |
+
+- **OSI Model**: 7 layers, more detailed
+- **TCP/IP Model**: 4 layers, widely used in real-world networking
+- **TCP/IP is based on real protocols**, OSI is mostly theoretical
+
+<img width="725" height="323" alt="image" src="https://github.com/user-attachments/assets/5385fde5-9e12-4b55-80a8-4038f8493f89" />
+
+#### Key Takeaways
+- TCP/IP is a practical model used in real-world networking.
+- Each layer is responsible for specific parts of data communication.
+- Understanding the model helps in troubleshooting and securing networks.
+- OSI provides more granularity but TCP/IP is the dominant implementation standard.
+
+---
+

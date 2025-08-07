@@ -47,7 +47,7 @@ Network devices maintain information and services for users of a network. These 
 
 <img width="783" height="360" alt="image" src="https://github.com/user-attachments/assets/a217c751-6aaf-4b2a-aa49-1ec74e3cd3a0" />
 
-### Key Concepts:
+### Key Concepts
 - **Network**: The overall infrastructure enabling device communication
 - **Network Devices**: Specialized equipment (routers, switches) that manage network traffic
 - **End-user Devices**: Computers, phones, etc. that connect via network devices
@@ -87,14 +87,14 @@ Network devices maintain information and services for users of a network. These 
  <img width="336" height="232" alt="image" src="https://github.com/user-attachments/assets/b0f22c49-b23b-45e0-94c3-1757bcc9c90b" />
 
 #### 4. Hubs and Switches
-##### Hubs:
+##### Hubs
 - Basic connection points for network devices
 - Broadcast data to all ports (security vulnerability)
 - Primarily used in limited setups (e.g., home offices)
 
 <img width="648" height="376" alt="image" src="https://github.com/user-attachments/assets/461c3a30-f068-4966-9ca0-1475810ab20b" />
 
-##### Switches:
+##### Switches
 - Intelligent traffic directors
 - Forward packets only to intended devices
 - Maintain MAC address tables
@@ -117,14 +117,14 @@ Network devices maintain information and services for users of a network. These 
 <img width="732" height="176" alt="image" src="https://github.com/user-attachments/assets/88ddfc14-8dd7-4db3-af5f-48e5194262ef" />
 
 #### 6. Modems and Wireless Access Points
-##### Modems:
+##### Modems
 - Connect to ISP
 - Convert signals between ISP and local network
 - Typically connect to routers
 
 <img width="719" height="199" alt="image" src="https://github.com/user-attachments/assets/ec70ee49-0573-4e16-9727-8c5b56bd66fd" />
 
-##### Wireless Access Points:
+##### Wireless Access Points
 - Create wireless networks via radio waves
 - Use Wi-Fi standards for communication
 - Enable wireless device connectivity

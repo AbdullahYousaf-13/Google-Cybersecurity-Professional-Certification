@@ -253,3 +253,71 @@ Visual representations of network architecture used by security professionals.
 
 ---
 
+### OSI Model
+
+#### What is the OSI Model?
+- OSI (Open Systems Interconnection) is a **7-layer model** for understanding network communication.
+- Each layer represents a step in the process of moving data between networked systems.
+- It complements the TCP/IP model but provides **more granularity**.
+
+#### OSI Layers Explained (Layer 7 → Layer 1)
+
+##### Layer 7: Application Layer
+- **Purpose**: Directly interacts with end-user applications.
+- **Protocols/Examples**:
+  - HTTP/HTTPS – Web browsing
+  - SMTP – Email
+  - DNS – Domain name to IP resolution
+- Handles user-generated data and requests.
+
+##### Layer 6: Presentation Layer
+- **Purpose**: Translates, encrypts, and compresses data for the application layer.
+- **Examples**:
+  - SSL/TLS – Encryption
+  - Converts data formats for compatibility between systems
+
+##### Layer 5: Session Layer
+- **Purpose**: Manages sessions (open, maintain, close connections).
+- **Functions**:
+  - Authentication
+  - Checkpointing
+  - Session recovery after interruptions
+
+##### Layer 4: Transport Layer
+- **Purpose**: Provides reliable or unreliable delivery of data.
+- **Key Protocols**:
+  - **TCP** – Reliable, ordered, connection-oriented
+  - **UDP** – Fast, connectionless, unordered
+- **Functions**:
+  - Segmentation and reassembly
+  - Flow and error control
+
+##### Layer 3: Network Layer
+- **Purpose**: Determines how data is sent to the receiving device across multiple networks.
+- **Key Protocols**:
+  - **IP (Internet Protocol)** – Routing
+- Data units at this layer are called **packets**.
+
+##### Layer 2: Data Link Layer
+- **Purpose**: Handles node-to-node delivery within the same network.
+- **Components**:
+  - Switches
+  - Network Interface Cards (NICs)
+- **Protocols**:
+  - HDLC, NCP, SDLC
+
+##### Layer 1: Physical Layer
+- **Purpose**: Transfers raw bits (0s and 1s) over physical media.
+- **Components**:
+  - Cables, hubs, modems
+  - Electrical signals or light pulses for transmission
+
+#### Key Takeaways
+- **OSI** is a detailed, layered framework for understanding how systems communicate over a network.
+- **Each layer serves a distinct role** in ensuring reliable data transmission.
+- **OSI and TCP/IP** are both useful depending on context:
+  - **OSI** is better for teaching, troubleshooting
+  - **TCP/IP** is used in real-world networking systems
+
+---
+

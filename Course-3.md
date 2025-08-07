@@ -137,3 +137,54 @@ Visual representations of network architecture used by security professionals.
 **Example Home Network Diagram**:
 
 <img width="713" height="435" alt="image" src="https://github.com/user-attachments/assets/43897777-00e1-49ef-9ef6-bea9049693a8" />
+
+---
+
+### Cloud Computing and Software-Defined Networks
+
+#### Introduction to Cloud Networks
+- Extends traditional network concepts (LAN/WAN) to cloud environments
+- Removes geographical limitations through virtualized infrastructure
+- Rapid growth due to digital transformation
+
+#### Cloud Computing Models
+
+##### IaaS vs PaaS vs SaaS
+
+| Service Model | Description                                              | Example Use               |
+|---------------|----------------------------------------------------------|---------------------------|
+| **IaaS**      | Virtual machines, storage, and networking managed by CSP | Hosting existing apps     |
+| **PaaS**      | Platform for developers to build and deploy custom apps  | Web app development       |
+| **SaaS**      | Software accessed via the internet                       | Google Workspace, Dropbox |
+
+#### On-Premise vs. Cloud
+
+| Characteristic     | On-Premise                  | Cloud                          |
+|--------------------|-----------------------------|--------------------------------|
+| **Location**       | Company-owned facilities    | Provider data centers          |
+| **Maintenance**    | In-house IT team            | Managed by CSP                 |
+| **Cost Model**     | Capital expenditure (CapEx) | Operational expenditure (OpEx) |
+| **Scalability**    | Physical hardware limits    | Elastic resources              |
+
+#### Hybrid & Multi-Cloud Environments
+- **Hybrid Cloud**: Mix of on-premise + cloud infrastructure
+- **Multi-Cloud**: Use of services from more than one CSP
+
+#### Software-Defined Networking (SDN)
+- Virtual equivalents of routers, switches, firewalls
+- Controlled via software, APIs, and dashboards
+- Improves agility, monitoring, and performance
+
+#### Benefits of Cloud Computing & SDN
+- **Reliability**: High availability, secure access
+- **Cost**: No large upfront hardware investments
+- **Scalability**: Elastic resource usage, pay-as-you-go model
+- **Security**: Easily deploy firewalls, IDS/IPS, and WAFs
+
+#### Key Takeaways
+- CSPs offer scalable, reliable, and cost-effective compute, storage, and network services.
+- SDNs enable dynamic and programmable networking like cloud systems.
+- Organizations benefit from reduced complexity and faster provisioning.
+
+#### More Info
+- [Google Cloud](https://cloud.google.com)

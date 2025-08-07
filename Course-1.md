@@ -1,8 +1,7 @@
 # Foundation of Cybersecurity
 
 **Description:**
-
-Explore the cybersecurity profession, including significant events that led to the development of the cybersecurity field and its continued importance to organizational operations. Learn about entry-level cybersecurity roles and responsibilities. 
+**Google Cybersecurity Certificate!** In this program, you will explore the growing field of cybersecurity, learn how cybersecurity is crucial to organizations and the people they serve, and develop relevant skills for a future career in the field. By completing the nine courses in this certificate program, you'll prepare for entry-level jobs in cybersecurity, such as cybersecurity analyst, security analyst, and security operations center (SOC) analyst. No prior experience in cybersecurity is required to complete this program.
 
 ---
 

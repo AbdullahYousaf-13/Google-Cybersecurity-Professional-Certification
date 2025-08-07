@@ -464,3 +464,265 @@ Network protocols are sets of rules that govern communication between devices on
 
 ---
 
+### Additional Network Protocols  
+This section covers essential protocols beyond basic communication, management, and security categories, including their port numbers and roles in network operations.  
+
+#### Network Address Translation (NAT)  
+- **Function**: Translates private IP addresses (LAN) to a public IP (WAN) for internet access.  
+- **Layers**: Operates at TCP/IP layers 2 (Internet) and 3 (Transport).  
+- **Private vs. Public IPs**:  
+  - **Private**: Non-routable, free (e.g., `192.168.x.x`).  
+  - **Public**: Routable, leased from ISPs (e.g., `8.8.8.8`).  
+
+#### Dynamic Host Configuration Protocol (DHCP)  
+- **Role**: Automatically assigns IPs, DNS, and gateway addresses to devices.  
+- **Ports**:  
+  - **Servers**: UDP 67  
+  - **Clients**: UDP 68  
+- **Layer**: Application (TCP/IP).  
+
+#### Address Resolution Protocol (ARP)  
+- **Purpose**: Maps IP addresses to MAC addresses for local network communication.  
+- **Layer**: Network Access (Layer 2). No port number.  
+- **Cache**: Devices store IP-MAC pairs in an ARP cache.  
+
+#### Remote Access Protocols  
+##### 1. **Telnet**  
+   - **Use**: Remote CLI access (insecure, plaintext).  
+   - **Port**: TCP 23.  
+   - **Layer**: Application.  
+
+##### 2. **Secure Shell (SSH)**  
+   - **Use**: Encrypted remote access (replaces Telnet).  
+   - **Port**: TCP 22.  
+   - **Layer**: Application.  
+
+#### Email Protocols  
+##### 1. **Post Office Protocol (POP3)**  
+   - **Function**: Downloads emails to a local device (deletes from server by default).  
+   - **Ports**:  
+     - Unencrypted: TCP/UDP 110  
+     - Encrypted (SSL/TLS): TCP/UDP 995  
+
+##### 2. **Internet Message Access Protocol (IMAP)**  
+   - **Function**: Syncs emails across devices (stores on server).  
+   - **Ports**:  
+     - Unencrypted: TCP 143  
+     - Encrypted (SSL/TLS): TCP 993  
+
+##### 3. **Simple Mail Transfer Protocol (SMTP)**  
+   - **Function**: Sends/relays emails between servers.  
+   - **Ports**:  
+     - Unencrypted: TCP/UDP 25  
+     - Encrypted (TLS): TCP/UDP 587  
+
+#### Key Port Numbers Summary  
+
+| Protocol | Port(s)                     | Encryption          |  
+|----------|-----------------------------|---------------------|  
+| DHCP     | UDP 67 (server), 68 (client)| -                   |  
+| ARP      | None                        | -                   |  
+| Telnet   | TCP 23                      | ❌ (Plaintext)      |  
+| SSH      | TCP 22                      | ✅ (AES)            |  
+| POP3     | 110 (unencrypted), 995 (TLS)| ✅ (995 only)       |  
+| IMAP     | 143 (unencrypted), 993 (TLS)| ✅ (993 only)       |  
+| SMTP     | 25 (unencrypted), 587 (TLS) | ✅ (587 only)       |  
+
+#### Key Takeaways  
+- **NAT** enables private networks to access the internet via a public IP.  
+- **DHCP** simplifies IP management; **ARP** resolves IP-MAC mappings.  
+- **SSH** (secure) replaces **Telnet** (insecure) for remote access.  
+- Email protocols: **POP3** (local storage) vs. **IMAP** (server sync); **SMTP** for sending.  
+- Memorize port numbers for firewall configurations and troubleshooting.
+
+---
+
+### Wireless Security Protocols
+Many people today refer to wireless internet as Wi-Fi. Wi-Fi refers to a set of standards that define communication for wireless LANs.
+
+#### 1. WEP (Wired Equivalent Privacy)
+- First wireless security protocol (1999)
+- Major security vulnerabilities
+
+#### 2. WPA (Wi-Fi Protected Access) 
+- Temporary replacement for WEP (2003)
+- Introduced TKIP encryption
+
+#### 3. WPA2
+- Current standard (2004)
+- Uses AES encryption
+- Personal and Enterprise modes
+
+#### 4. WPA3
+- Latest protocol (2018)
+- 128/192-bit encryption
+- KRACK attack resistant
+
+#### Key Takeaways
+- WEP and WPA are insecure
+- Always use WPA3 (or WPA2 as fallback)
+
+---
+
+### Subnetting and CIDR
+
+#### What is Subnetting?
+- Division of a network into smaller logical subnets
+- Improves efficiency and enables security zoning
+- Devices on same subnet communicate faster
+
+#### CIDR (Classless Inter-Domain Routing) Notation
+- Replaced classful addressing (Class A-E)
+- Format: IP/prefix (e.g., 192.168.1.0/24)
+- /24 represents subnet mask (255.255.255.0)
+- Allows more efficient IP allocation
+
+#### Security Benefits of subnetting
+- Creates isolated network segments
+- Enables security zones (DMZ, restricted zones, etc.)
+- Reduces attack surface through segmentation
+- No need for additional public IPs
+
+#### Key Takeaways
+- Subnetting improves performance and security
+- CIDR provides flexible IP allocation
+- Essential for network segmentation strategies
+
+---
+
+### Virtual Networks and Privacy
+
+#### Network Protocols
+- **Communication**: TCP, UDP, SMTP
+- **Management**: ICMP
+- **Security**: IPSec, SSL/TLS
+- **Common Protocols**:
+  - HTTP (web communication)
+  - DNS (hostname to IP)
+  - ARP (IP to MAC mapping)
+
+#### Wireless Security
+- **Protocols**: WEP → WPA → WPA2 → WPA3
+- **Encryption**: AES (WPA2/WPA3)
+- **Modes**:
+  - Personal (home networks)
+  - Enterprise (business networks)
+
+#### Network Security Tools
+##### Firewalls
+- **Stateless**: Rule-based, no connection tracking
+- **Stateful**: Tracks connections via state table
+- **Next-Gen (NGFW)**:
+  - Deep packet inspection
+  - Application-aware filtering
+  - Advanced threat prevention
+
+##### Proxy Servers
+- **Forward**: Internal → External
+- **Reverse**: External → Internal
+- **Features**: NAT, content filtering
+
+##### VPNs
+- Encrypts data in transit
+- Masks IP addresses
+- Uses encapsulation
+
+#### Key Takeaways
+1. Protocols enable secure communication
+2. WPA3 is current wireless standard
+3. Firewalls/proxies/VPNs provide layered security
+4. Modern networks combine VPN + SD-WAN
+
+---
+
+### VPN Protocols: WireGuard vs IPSec
+
+#### VPN Overview
+- Encrypts data and hides IP addresses
+- Creates secure tunnels over public networks
+- Protocols define connection rules between endpoints
+
+#### VPN Types
+1. **Remote Access VPN**
+   - Connects personal devices to VPN servers
+   - Used by individual users
+   - Easier to configure
+
+2. **Site-to-Site VPN**
+   - Connects entire networks
+   - Used by enterprises with multiple locations
+   - More complex configuration
+
+#### Protocol Comparison
+
+| Feature          | WireGuard              | IPSec                  |
+|------------------|------------------------|------------------------|
+| Speed            | Faster                 | Slower                 |
+| Code Complexity  | Simple (fewer lines)   | Complex                |
+| Deployment       | Easier (open source)   | More difficult         |
+| Use Cases        | Streaming, large files | Legacy systems         |
+| Connection Types | Site-to-site & remote  | Primarily site-to-site |
+
+#### Key Takeaways
+- WireGuard offers better performance and simpler setup
+- IPSec has wider compatibility (older protocol)
+- Choice depends on speed needs vs compatibility
+
+---
+
+### Terms and Definitions
+
+**Address Resolution Protocol (ARP)**: A network protocol used to determine the MAC address of the next router or device on the path
+
+**Cloud-based firewalls**: Software firewalls that are hosted by the cloud service provider
+
+**Controlled zone**: A subnet that protects the internal network from the uncontrolled zone
+
+**Domain Name System (DNS)**: A networking protocol that translates internet domain names into IP addresses
+
+**Encapsulation**: A process performed by a VPN service that protects your data by wrapping sensitive data in other data packets
+
+**Firewall**: A network security device that monitors traffic to or from your network
+
+**Forward proxy server**: A server that regulates and restricts a person's access to the internet
+
+**Hypertext Transfer Protocol (HTTP)**: An application layer protocol that provides a method of communication between clients and website servers
+
+**Hypertext Transfer Protocol Secure (HTTPS)**: A network protocol that provides a secure method of communication between clients and servers
+
+**IEEE 802.11 (Wi-Fi)**: A set of standards that define communication for wireless LANs
+
+**Network protocols**: A set of rules used by two or more devices on a network to describe the order of delivery of data and the structure of data
+
+**Network segmentation**: A security technique that divides the network into segments
+
+**Port filtering**: A firewall function that blocks or allows certain port numbers to limit unwanted communication
+
+**Proxy server**: A server that fulfills the requests of its clients by forwarding them to other servers
+
+**Reverse proxy server**: A server that regulates and restricts the internet's access to an internal server
+
+**Secure File Transfer Protocol (SFTP)**: A secure protocol used to transfer files from one device to another over a network
+
+**Secure shell (SSH)**: A security protocol used to create a shell with a remote system
+
+**Security zone**: A segment of a company's network that protects the internal network from the internet
+
+**Simple Network Management Protocol (SNMP)**: A network protocol used for monitoring and managing devices on a network
+
+**Stateful**: A class of firewall that keeps track of information passing through it and proactively filters out threats
+
+**Stateless**: A class of firewall that operates based on predefined rules and does not keep track of information from data packets
+
+**Subnetting**: The subdivision of a network into logical groups called subnets
+
+**Transmission Control Protocol (TCP)**: An internet communication protocol that allows two devices to form a connection and stream data
+
+**Uncontrolled zone**: The portion of the network outside the organization
+
+**Virtual private network (VPN)**: A network security service that changes your public IP address and masks your virtual location so that you can keep your data private when you are using a public network like the internet
+
+**Wi-Fi Protected Access (WPA)**: A wireless security protocol for devices to connect to the internet
+
+---
+---

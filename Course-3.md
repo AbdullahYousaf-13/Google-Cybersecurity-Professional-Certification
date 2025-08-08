@@ -912,3 +912,114 @@ Exploiting hidden access points in systems
 
 ---
 ---
+
+## Module 4
+
+### Security Hardening Fundamentals
+
+#### What is Security Hardening?
+- Process of reducing system vulnerabilities
+- Minimizes attack surface (potential entry points)
+- Applies to: hardware, OS, apps, networks, databases
+
+#### Common Hardening Techniques
+
+##### 1. System Maintenance
+- Regular software updates/patches
+- Disable unused applications/services
+- Close unused network ports
+- Reduce excessive access permissions
+
+##### 2. OS Hardening Practices
+- Scheduled patch management
+- Baseline configuration maintenance
+- Secure hardware/software disposal
+- Strong password policies + MFA
+
+##### 3. Network Protection
+- Regular penetration testing
+- Encryption standard updates
+- Device/access monitoring
+- Physical security measures
+
+#### Key Benefits
+- Prevents exploitation of known vulnerabilities
+- Limits damage from potential breaches
+- Maintains system integrity
+- Improves monitoring efficiency
+
+> **Pro Tip**: Treat hardening as an ongoing process, not a one-time task. Regular reviews and updates are essential for maintaining security.
+
+---
+
+### Brute Force Attacks & OS Hardening
+
+#### Brute Force Attack & its Types
+Trial-and-error method to guess credentials
+- **Simple Brute Force**: Manual credential guessing
+- **Dictionary Attacks**: Uses common passwords/breached credentials
+
+#### Vulnerability Assessment Tools
+| **Tool**             | **Purpose**              | **Considerations**             |
+|----------------------|--------------------------|--------------------------------|
+| **Virtual Machines** | Isolated malware testing | Risk of VM escape              |
+| **Sandboxes**        | Safe environment testing | Some malware detects sandboxes |
+
+#### Prevention Measures
+##### 1. Password Security
+   - Hashing (one-way encryption)
+   - Salting (adds random characters)
+
+##### 2. Authentication
+   - MFA/2FA (multiple verification steps)
+   - CAPTCHA/reCAPTCHA (bot prevention)
+
+##### 3. Password Policies
+   - Complexity requirements
+   - Rotation schedules
+   - Attempt limits
+   - Reuse restrictions
+
+#### OS Hardening and its Benefits
+The process of securing an operating system by reducing vulnerabilities through configuration changes, updates, and access controls
+- Reduces attack surface
+- Limits damage from breaches
+- Complements brute force protections
+
+> **Best Practice**: Combine technical controls (MFA) with policy controls (password rules) for defense-in-depth.
+
+---
+
+### Network Security Applications
+
+#### Core Security Tools
+##### 1. Firewall
+   - *Function*: Filters traffic based on rules (ports/IPs)  
+   - *Types*: Stateless, Stateful, Next-Gen (NGFW)  
+   - *Placement*: Network perimeter  
+
+##### 2. Intrusion Detection System (IDS)  
+   - *Function*: Monitors traffic and alerts on threats  
+   - *Limitation*: Detection-only (no blocking)  
+   - *Placement*: Behind firewall  
+
+##### 3. Intrusion Prevention System (IPS)  
+   - *Function*: Actively blocks detected threats  
+   - *Risk*: Inline failure breaks connectivity  
+   - *Placement*: Behind firewall  
+
+##### 4. SIEM Tools  
+   - *Function*: Centralized log analysis & alerting  
+   - *Examples*: Splunk, Chronicle  
+   - *Value*: "Single pane of glass" monitoring  
+
+#### Key Comparisons
+| **Tool**	   | **Pros**	                | **Cons**                     |
+|--------------|--------------------------|------------------------------|
+| **Firewall** | Basic traffic filtering	| Limited to header inspection |
+| **IDS**	     | Threat detection         |	No active prevention         |
+| **IPS**	     | Active threat blocking	  | False positives risk         |
+| **SIEM**	   | Centralized visibility	  | Requires manual analysis     |
+
+---
+

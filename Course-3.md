@@ -1023,3 +1023,81 @@ The process of securing an operating system by reducing vulnerabilities through 
 
 ---
 
+### Cloud Security Essentials
+
+#### Key Considerations
+##### 1. IAM (Identity Access Management)
+   - Manages user roles/permissions
+   - Critical to prevent overprivileged accounts
+
+##### 2. Configuration Management
+   - Each service requires precise security settings
+   - Misconfigurations = leading cause of cloud breaches
+
+##### 3. Attack Surface Expansion
+   - Every new service adds potential vulnerabilities
+   - Requires compensating security controls
+
+##### 4. Zero-Day Threats
+   - CSPs often detect/patch faster than on-prem
+   - Hypervisor-level protections available
+
+##### 5. Visibility Challenges
+   - Limited packet-level inspection
+   - Reliance on flow logs and mirroring tools
+   - Third-party audits verify CSP security
+
+---
+
+### Cloud Cryptography & Security Hardening
+
+#### Core Hardening Techniques
+##### 1. IAM (Identity Access Management)
+   - Manages digital identities and resource access
+   - Critical for least-privilege enforcement
+
+##### 2. Hypervisor Security
+   - **Type 1 (Bare-metal)**: ESXi, Hyper-V (CSP-managed)
+   - **Type 2 (Hosted)**: VirtualBox, VMware Workstation
+   - Mitigate VM escape risks via CSP patches
+
+##### 3. Baselining
+   - Establish secure reference configurations:
+     - Admin portal restrictions
+     - Mandatory encryption
+     - Threat detection enablement
+
+#### Cryptographic Protections
+| **Technique**        | **Purpose**             | **Implementation**       |
+|----------------------|-------------------------|--------------------------|
+| **Encryption**       | Data confidentiality    | AES-256 for data at rest |
+| **Key Management**   | Secure key storage      | TPM, CloudHSM            |
+| **Crypto-Shredding** | Secure data destruction | Key deletion             |
+
+---
+
+### Terms and Definitions from Module 4
+
+**Baseline configuration (baseline image)**: A documented set of specifications within a system that is used as a basis for future builds, releases, and updates
+
+**Hardware**: The physical components of a computer
+
+**Multi-factor authentication (MFA)**: A security measure which requires a user to verify their identity in two or more ways to access a system or network
+
+**Network log analysis**: The process of examining network logs to identify events of interest 
+
+**Operating system (OS)**: The interface between computer hardware and the user
+
+**Patch update**: A software and operating system update that addresses security vulnerabilities within a program or product
+
+**Penetration testing (pen test)**: A simulated attack that helps identify vulnerabilities in systems, networks, websites, applications, and processes 
+
+**Security hardening**: The process of strengthening a system to reduce its vulnerabilities and attack surface
+
+**Security information and event management (SIEM)**: An application that collects and analyzes log data to monitor critical activities for an organization
+
+**World-writable file**: A file that can be altered by anyone in the world
+
+---
+---
+---

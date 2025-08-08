@@ -726,3 +726,189 @@ Many people today refer to wireless internet as Wi-Fi. Wi-Fi refers to a set of 
 
 ---
 ---
+
+## Module 3
+
+### How Intrusions Compromise Systems
+
+#### Network Interception Attacks
+Intercepting network traffic to steal data or disrupt transmissions
+- **Methods**:
+  - Packet sniffing (capturing/inspecting data)
+  - Altering transmissions (e.g., modifying bank transfers)
+- **Types**:
+  - On-path attacks
+  - Replay attacks
+
+#### Backdoor Attacks
+Exploiting hidden access points in systems
+- **Sources**:
+  - Intentionally left by developers for troubleshooting
+  - Installed by attackers after initial breach
+- **Impacts**:
+  - Malware installation
+  - DoS attacks
+  - Data theft
+  - Security setting changes
+
+#### Potential Organizational Impacts
+| Impact Area   | Consequences                                                       |
+|---------------|--------------------------------------------------------------------|
+| Financial     | Lost revenue, repair costs, ransomware payments, legal settlements |
+| Reputation    | Loss of customer trust, competitive disadvantage                   |
+| Public Safety | Critical infrastructure compromise (power grids, water systems)    |
+
+#### Key Takeaways
+- Attackers exploit vulnerabilities via interception/backdoor methods
+- Consequences span financial, reputational, and safety domains
+- Continuous security monitoring is critical for prevention
+
+---
+
+### Denial of Service (DoS) Attacks
+
+#### Overview
+- **Objective**: Overwhelm network/server to disrupt operations
+- **Impact**: Business downtime, financial loss, security vulnerabilities
+- **DDoS**: Distributed version using multiple attack sources
+
+#### Common Network-Level DoS Attacks
+
+1. **SYN Flood Attack**
+   - Exploits TCP 3-way handshake:
+     1. Floods server with SYN requests
+     2. Exhausts available ports
+     3. Prevents legitimate connections
+
+2. **ICMP Flood Attack**
+   - Bombards server with ICMP echo requests
+   - Consumes all bandwidth
+   - Crashes server from traffic overload
+
+3. **Ping of Death**
+   - Sends oversized ICMP packets (>64KB)
+   - Causes system crashes
+   - Analogous to crushing infrastructure
+
+#### Key Characteristics
+| Attack Type   | Protocol Used | Method                | Result                |
+|---------------|---------------|-----------------------|----------------------|
+| SYN Flood     | TCP           | Half-open connections | Port exhaustion      |
+| ICMP Flood    | ICMP          | Echo request spam     | Bandwidth saturation |
+| Ping of Death | ICMP          | Oversized packets     | System crash         |
+
+#### Mitigation Strategies
+- Rate limiting
+- Traffic filtering
+- Cloud-based DDoS protection
+- Network monitoring systems
+
+---
+
+### tcpdump Network Protocol Analyzer
+
+#### Overview
+- Command-line packet sniffer
+- Lightweight (low CPU/memory usage)
+- Uses libpcap library
+- Preinstalled on most Linux/Unix systems
+
+#### Key Output Fields
+| **Field**       | **Timestamp**       | **Source IP**     | **Source Port**    | **Dest IP**       | **Dest Port**      |
+|-----------------|---------------------|-------------------|--------------------|-------------------|--------------------|
+| **Description** | Packet capture time | Origin IP address | Origin port number | Target IP address | Target port number |
+| **Example**     | `12:34:56.789`      | `192.168.1.1`     | `54321`            | `10.0.0.1`        | `80`               |
+
+<img width="731" height="131" alt="image" src="https://github.com/user-attachments/assets/07cd7929-c8ec-4879-9282-a1c922475217" />
+
+#### Common Uses
+- Network troubleshooting
+- Traffic pattern analysis
+- Security monitoring
+- Detecting malicious activity
+- Identifying unauthorized services
+
+#### Security Considerations
+**Legitimate Uses:**
+- Baseline network traffic
+- Troubleshoot performance
+- Detect intrusions
+
+**Malicious Uses:**
+- Capturing credentials
+- Reconnaissance
+- Eavesdropping
+
+---
+
+### IP Spoofing Attacks
+
+#### What is IP Spoofing?
+- Modifying source IP in packets to impersonate authorized systems
+- Bypasses firewall rules by appearing as internal traffic
+
+#### Common Spoofing Attacks
+
+##### 1. On-Path Attack
+   - Attacker intercepts communication between two devices
+   - Becomes "man-in-the-middle"
+   - Can alter data in transit
+
+##### 2. Replay Attack
+   - Intercepts and delays/retransmits packets
+   - **Used to**:
+     - Disrupt connections
+     - Impersonate authorized users
+
+##### 3. Smurf Attack
+   - Combines DDoS + IP spoofing
+   - Floods spoofed IP with packets
+   - Overwhelms target system
+
+#### Prevention Methods
+| **Defense**        | **Implementation**                       |
+|--------------------|------------------------------------------|
+| Encryption         | Prevents packet interpretation           |
+| Firewall Rules     | Block external traffic with internal IPs |
+| Network Monitoring | Detect abnormal traffic patterns         |
+
+#### Key Takeaways
+- Spoofing enables more complex attacks
+- Firewalls should reject internal IPs from external sources
+- Encryption is critical for protection
+- Combination of defenses works best
+
+---
+
+### Terms and Definitions
+
+**Active packet sniffing**: A type of attack where data packets are manipulated in transit
+
+**Botnet**: A collection of computers infected by malware that are under the control of a single threat actor, known as the "bot-herder"
+
+**Denial of service (DoS) attack**: An attack that targets a network or server and floods it with network traffic
+
+**Distributed denial of service (DDoS) attack**: A type of denial of service attack that uses multiple devices or servers located in different locations to flood the target network with unwanted traffic
+
+**Internet Control Message Protocol (ICMP)**: An internet protocol used by devices to tell each other about data transmission errors across the network
+
+**Internet Control Message Protocol (ICMP) flood**: A type of DoS attack performed by an attacker repeatedly sending ICMP request packets to a network server
+
+**IP spoofing**: A network attack performed when an attacker changes the source IP of a data packet to impersonate an authorized system and gain access to a network
+
+**On-path attack**: An attack where a malicious actor places themselves in the middle of an authorized connection and intercepts or alters the data in transit
+
+**Packet sniffing**: The practice of capturing and inspecting data packets across a network
+
+**Passive packet sniffing**: A type of attack where a malicious actor connects to a network hub and looks at all traffic on the network
+
+**Ping of death**: A type of DoS attack caused when a hacker pings a system by sending it an oversized ICMP packet that is bigger than 64KB
+
+**Replay attack**: A network attack performed when a malicious actor intercepts a data packet in transit and delays it or repeats it at another time
+
+**Smurf attack**: A network attack performed when an attacker sniffs an authorized user's IP address and floods it with ICMP packets
+
+**Synchronize (SYN) flood attack**: A type of DoS attack that simulates a TCP/IP connection and floods a server with SYN packets
+
+---
+---

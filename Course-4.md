@@ -276,7 +276,7 @@ The person interacting with the computer. Linux supports multi-user environments
 - **RAM**: Short-term memory (volatile)
 - **Hard Drive**: Long-term storage (persistent)
 
-### Key Takeaways
+#### Key Takeaways
 1. Linux architecture components work sequentially:  
    User → Applications → Shell → FHS → Kernel → Hardware  
 2. Each layer has distinct security implications  
@@ -289,7 +289,7 @@ The person interacting with the computer. Linux supports multi-user environments
 
 Security analysts should be familiar with these key Linux distributions:
 
-#### KALI LINUX ™
+#### KALI LINUX
 _(Trademark of OffSec)_  
 **Type**: 
 - Debian-based
@@ -361,7 +361,7 @@ _(Trademark of OffSec)_
 - Free alternative to Red Hat  
 - Maintained by community  
 
-### Key Takeaways  
+#### Key Takeaways  
 1. **Security Focus**: KALI LINUX ™ and Parrot specialize in penetration testing  
 2. **Enterprise Use**: Red Hat and AlmaLinux target business environments  
 3. **Versatility**: Ubuntu balances security with general computing needs  
@@ -450,7 +450,7 @@ _(Trademark of OffSec)_
 
 > **Course Note**: All exercises will use bash (indicated by `$` prompt)
 
-### Key Takeaways
+#### Key Takeaways
 1. Shells bridge user commands and system operations
 2. Bash is industry standard for security work
 3. Shell differences mainly affect advanced functionality
@@ -530,7 +530,8 @@ _(Trademark of OffSec)_
 ### Linux Filesystem Navigation and File Reading
 
 #### Filesystem Hierarchy Standard (FHS)
-- **Root Directory**: `/` (base of all directories)
+- **Root Directory**:
+  - `/` (base of all directories)
 - **Key Directories**:
   - `/home`: User directories
   - `/bin`: Essential binaries
@@ -546,7 +547,7 @@ _(Trademark of OffSec)_
 | `cd`     | Change directory        | `cd ~/projects`      |
 | `whoami` | Show current user       | `whoami` → `analyst` |
 
-**Path Notations**:
+#### Path Notations
 - `~` = Home directory
 - `.` = Current directory
 - `..` = Parent directory
@@ -559,17 +560,74 @@ _(Trademark of OffSec)_
 | `tail`  | Show last lines     | `tail -f live.log`   |
 | `less`  | Page through file   | `less largefile.txt` |
 
-**Less Navigation**:
+#### Less Navigation
 - `Space`: Next page
 - `b`: Previous page
 - `↑/↓`: Line navigation
 - `q`: Quit
 
-### Pro Tips
+#### Pro Tips
 1. Use `man hier` for FHS details
 2. `tail -f` monitors growing log files
 3. Absolute paths start with `/`, relative paths don't
 4. `/tmp` is world-writable - handle with care
+
+---
+
+### Filtering Content in Linux
+
+#### grep Commands
+| Command | Function | Example |
+|---------|----------|---------|
+| `grep`  | Search text in file | `grep OS updates.txt` |
+|         | Search error keyword | `grep error time_logs.txt` |
+
+#### Piping (`|`)
+| Symbol | Function                    | Example                                  |
+|--------|-----------------------------|------------------------------------------|
+| `|`    | Send output to next command | `ls /home/analyst/reports \| grep users` |
+
+> **Note**: Pipe (`|`) sends command output as input to another.
+
+#### find Commands
+| Command                 | Function               | Example                                     |
+|-------------------------|------------------------|---------------------------------------------|
+| `find [path] [options]` | Search files/dirs      | `find /home/analyst/projects -name "*log*"` |
+| `-name`                 | Case-sensitive match   | `find /dir -name "*txt*"`                   |
+| `-iname`                | Case-insensitive match | `find /dir -iname "*txt*"`                  |
+| `-mtime`                | Modified by days       | `find /dir -mtime -3`                       |
+| `-mmin`                 | Modified by minutes    | `find /dir -mmin -60`                       |
+
+---
+
+### Linux File & Directory Management
+
+#### Directory Commands
+| Command | Function               | Example                            |
+|------- -|------------------------|------------------------------------|
+| `mkdir` | Create directory       | `mkdir /home/analyst/logs/network` |
+| `rmdir` | Remove empty directory | `rmdir /home/analyst/logs/network` |
+
+#### File Commands
+| Command | Function                | Example                                 |
+|---------|-------------------------|-----------------------------------------|
+| `touch` | Create empty file       | `touch permissions.txt`                 |
+| `rm`    | Delete file             | `rm permissions.txt`                    |
+| `mv`    | Move/Rename file or dir | `mv permissions.txt /home/analyst/logs` |
+| `cp`    | Copy file or dir        | `cp permissions.txt /home/analyst/logs` |
+
+#### nano Text Editor
+| Action    | Shortcut/Command    |
+|-----------|---------------------|
+| Open file | `nano filename.txt` |
+| Save      | `Ctrl + O`          |
+| Exit      | `Ctrl + X`          |
+
+#### Output Redirection
+| Symbol | Function       | Example                                       |
+|--------|----------------|-----------------------------------------------|
+| `>`    | Overwrite file | `echo "time" > permissions.txt`               |
+| `>>`   | Append to file | `echo "last updated date" >> permissions.txt` |
 
 ---
 

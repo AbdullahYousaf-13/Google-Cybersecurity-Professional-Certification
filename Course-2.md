@@ -150,7 +150,7 @@ Core principles for security professionals:
 
 ---
 
-### Terms and definitions from Module 1
+### Terms and Definitions from Module 1
 
 **Assess**: The fifth step of the NIST RMF that means to determine if established controls are implemented correctly
 
@@ -343,7 +343,7 @@ Three main categories to review during audits:
 
 ---
 
-### Terms and definitions from Module 2
+### Terms and Definitions from Module 2
 
 **Asset**: An item perceived as having value to an organization  
 
@@ -537,7 +537,7 @@ Chronicle is a cloud-native SIEM tool from Google that retains, analyzes, and se
 
 ---
 
-### Terms and definitions from Course 2, Module 3
+### Terms and Definitions from Course 2, Module 3
 
 **Chronicle**: A cloud-native tool designed to retain, analyze, and search data
 
@@ -664,7 +664,7 @@ A playbook is a manual that provides details about any operational action. Essen
 
 ---
 
-### Terms and definitions from Module 4
+### Terms and Definitions from Module 4
 
 **Incident response**: An organization’s quick attempt to identify an attack, contain the damage, and correct the effects of a security breach
 

@@ -392,7 +392,7 @@ An IPv4 packet consists of:
 
 ---
 
-###Terms and Definitions – Course 3, Module 1
+### Terms and Definitions from Module 1
 
 **Bandwidth**: The maximum data transmission capacity over a network, measured by bits per second
 
@@ -670,7 +670,7 @@ Many people today refer to wireless internet as Wi-Fi. Wi-Fi refers to a set of 
 
 ---
 
-### Terms and Definitions
+### Terms and Definitions from Module 2
 
 **Address Resolution Protocol (ARP)**: A network protocol used to determine the MAC address of the next router or device on the path
 
@@ -880,7 +880,7 @@ Exploiting hidden access points in systems
 
 ---
 
-### Terms and Definitions
+### Terms and Definitions from Module 3
 
 **Active packet sniffing**: A type of attack where data packets are manipulated in transit
 

@@ -120,7 +120,7 @@ When security analysts need to review vulnerabilities, they conduct a periodic s
 
 ---
 
-### Terms and definitions from Module 1
+### Terms and Definitions from Module 1
 
 **Cybersecurity (or Security):** The practice of ensuring confidentiality, integrity, and availability of information by protecting networks, devices, people, and data from unauthorized access or criminal exploitation
 
@@ -447,7 +447,7 @@ To exploit security weaknesses by using existing malware, programming scripts, a
 
 ---
 
-### Terms and definitions from Module 2
+### Terms and Definitions from Module 2
 
 **Adversarial artificial intelligence (AI):** A technique that manipulates artificial intelligence (AI) and machine learning (ML) technology to conduct attacks more efficiently 
 
@@ -538,7 +538,7 @@ These are guidelines used for building plans to help mitigate risks and threats 
 
 ---
 
-### Terms and definitions from Module 3
+### Terms and Definitions from Module 3
 
 **Asset:** An item perceived as having value to an organization 
 
@@ -655,7 +655,7 @@ As previously mentioned, you will have multiple opportunities throughout the cer
 
 ---
 
-### Terms and definitions from Module 4
+### Terms and Definitions from Module 4
 
 **Antivirus software:** A software program used to prevent, detect, and eliminate malware and viruses
 

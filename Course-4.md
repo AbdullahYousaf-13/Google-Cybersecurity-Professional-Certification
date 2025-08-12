@@ -524,3 +524,52 @@ _(Trademark of OffSec)_
 
 ---
 ---
+
+## Module 3
+
+### Linux Filesystem Navigation and File Reading
+
+#### Filesystem Hierarchy Standard (FHS)
+- **Root Directory**: `/` (base of all directories)
+- **Key Directories**:
+  - `/home`: User directories
+  - `/bin`: Essential binaries
+  - `/etc`: Configuration files
+  - `/tmp`: Temporary files (common attack target)
+  - `/mnt`: Mounted devices
+
+#### Navigation Commands
+| Command  | Function                | Example              |
+|----------|-------------------------|----------------------|
+| `pwd`    | Show current directory  | `pwd` → `/home/user` |
+| `ls`     | List directory contents | `ls /var/log`        |
+| `cd`     | Change directory        | `cd ~/projects`      |
+| `whoami` | Show current user       | `whoami` → `analyst` |
+
+**Path Notations**:
+- `~` = Home directory
+- `.` = Current directory
+- `..` = Parent directory
+
+#### File Reading Commands
+| Command | Function            | Options              |
+|---------|---------------------|----------------------|
+| `cat`   | Display entire file | `cat log.txt`        |
+| `head`  | Show first lines    | `head -n 5 file.txt` |
+| `tail`  | Show last lines     | `tail -f live.log`   |
+| `less`  | Page through file   | `less largefile.txt` |
+
+**Less Navigation**:
+- `Space`: Next page
+- `b`: Previous page
+- `↑/↓`: Line navigation
+- `q`: Quit
+
+### Pro Tips
+1. Use `man hier` for FHS details
+2. `tail -f` monitors growing log files
+3. Absolute paths start with `/`, relative paths don't
+4. `/tmp` is world-writable - handle with care
+
+---
+

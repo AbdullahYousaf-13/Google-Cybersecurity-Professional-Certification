@@ -585,7 +585,7 @@ _(Trademark of OffSec)_
 #### Piping (`|`)
 | Symbol | Function                    | Example                                  |
 |--------|-----------------------------|------------------------------------------|
-| `|`    | Send output to next command | `ls /home/analyst/reports \| grep users` |
+| `\|`   | Send output to next command | `ls /home/analyst/reports \| grep users` |
 
 > **Note**: Pipe (`|`) sends command output as input to another.
 

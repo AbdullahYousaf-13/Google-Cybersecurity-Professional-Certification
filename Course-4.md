@@ -200,7 +200,7 @@ Security analysts work with both graphical (GUI) and command-line interfaces (CL
  
 ---
 
-### Terms and Definitions
+### Terms and Definitions from Module 1
 
 **Application**: A program that performs a specific task.
 
@@ -225,3 +225,302 @@ Security analysts work with both graphical (GUI) and command-line interfaces (CL
 **User interface**: A program that allows the user to control the functions of the operating system.
 
 **Virtual machine (VM)**: A virtual version of a physical computer.
+ 
+---
+---
+
+## Module 2
+
+### Linux Architecture Explained
+Understanding Linux architecture helps security analysts comprehend system organization and functionality. A task request flows through these components:
+
+#### User
+The person interacting with the computer. Linux supports multi-user environments where multiple users can share resources simultaneously.
+
+#### Applications
+**Programs performing specific tasks**:
+- **Pre-installed**: Calculators, calendars
+- **Installable**: Web browsers, email clients (via package managers)
+- **Package Manager**: Tool for installing/managing software bundles (packages)
+
+#### Shell
+**The command-line interpreter that**:
+- Translates user commands to machine-readable instructions
+- Returns kernel responses in human-readable format
+- Acts as a user-kernel interface
+
+#### Filesystem Hierarchy Standard (FHS)
+**Organizes data storage through**:
+- **Directories** (folders): /bin (essential binaries), /etc (config files), /home (user files)
+- Standardized locations for system files and user data
+
+#### Kernel
+**Core component that**:
+- Manages processes and memory
+- Routes commands between apps and hardware
+- Controls all major hardware functions
+- Allocates system resources efficiently
+
+#### Hardware
+**Physical computer components**:
+
+##### Peripheral Devices
+**Non-essential attached hardware**:
+- Monitors, printers
+- Keyboards, mice
+
+##### Internal Hardware
+**Core system components**:
+- **Motherboard**: Main circuit board
+- **CPU**: Executes program instructions
+- **RAM**: Short-term memory (volatile)
+- **Hard Drive**: Long-term storage (persistent)
+
+### Key Takeaways
+1. Linux architecture components work sequentially:  
+   User → Applications → Shell → FHS → Kernel → Hardware  
+2. Each layer has distinct security implications  
+3. Understanding this flow aids in troubleshooting and security analysis  
+4. Kernel and FHS are unique to Linux's efficiency and organization
+
+---
+
+### Linux Distributions in Cybersecurity
+
+Security analysts should be familiar with these key Linux distributions:
+
+#### KALI LINUX ™
+_(Trademark of OffSec)_  
+**Type**: 
+- Debian-based
+- Open-source
+
+**Primary Use**:  
+- Penetration testing (simulated attacks to find vulnerabilities)  
+- Digital forensics (post-attack data analysis)
+
+**Features**:  
+- Comes pre-installed with 600+ security tools  
+- Standard distribution for security professionals  
+
+#### Ubuntu  
+**Type**:
+- Debian-derived
+- Open-source
+
+**Primary Use**:  
+- General security operations  
+- Cloud computing environments
+
+**Features**:  
+- User-friendly with both CLI and GUI  
+- Extensive package repository  
+- Large community support  
+- Common in enterprise cloud migrations  
+
+#### Parrot  
+**Type**: 
+- Debian-based
+- Open-source  
+
+**Primary Use**:  
+- Penetration testing  
+- Digital forensics  
+- Privacy-focused computing
+  
+**Features**:  
+- Pre-loaded security tools (like KALI LINUX ™)  
+- Lightweight OS options available  
+- User-friendly GUI interface  
+
+#### Red Hat® Enterprise Linux®  
+**Type**:
+- Enterprise
+- Subscription-based  
+
+**Primary Use**:  
+- Large-scale enterprise systems  
+- Mission-critical deployments
+  
+**Features**:  
+- Commercial support available  
+- Strong security certifications  
+- Stable release cycles  
+
+#### AlmaLinux  
+**Type**: 
+- Community-driven
+- Open-source
+ 
+**Primary Use**:  
+- CentOS replacement  
+- Enterprise environments
+
+**Features**:  
+- Binary-compatible with RHEL  
+- Free alternative to Red Hat  
+- Maintained by community  
+
+### Key Takeaways  
+1. **Security Focus**: KALI LINUX ™ and Parrot specialize in penetration testing  
+2. **Enterprise Use**: Red Hat and AlmaLinux target business environments  
+3. **Versatility**: Ubuntu balances security with general computing needs  
+4. **Cost Factors**: Most distributions are free except Red Hat  
+5. **Transition**: AlmaLinux fills the gap left by CentOS discontinuation  
+
+> **Note**: Trademarks belong to their respective owners (KALI LINUX ™ - OffSec, Red Hat® - IBM)
+
+---
+
+### Package Managers Overview
+
+#### Core Concepts
+- **Packages**: Software bundles (may include dependencies)
+- **Package Managers**: Tools to install/update/remove software
+- **Key Types**:
+  - **Debian/Ubuntu**: `.deb` format (dpkg/APT)
+  - **Red Hat/CentOS**: `.rpm` format (RPM/YUM)
+
+#### Quick Commands
+| Action          | Debian (APT)            | Red Hat (YUM)          |
+|-----------------|-------------------------|------------------------|
+| Install         | `sudo apt install pkg`  | `sudo yum install pkg` |
+| Update          | `sudo apt update`       | `sudo yum update`      |
+| Upgrade         | `sudo apt upgrade`      | `sudo yum upgrade`     |
+| Remove          | `sudo apt remove pkg`   | `sudo yum remove pkg`  |
+
+> **Security Tip**: Always update packages (`apt upgrade`/`yum update`) for latest security patches.
+
+---
+
+### Essential Linux Terminal Shortcuts
+
+#### Command Control
+| Shortcut       | Function                          |
+|----------------|-----------------------------------|
+| `CTRL + C`     | Stop current command              |
+| `CTRL + V`     | Paste text                        |
+| `CTRL + L`     | Clear screen (alternative to `clear`) |
+
+#### Cursor Navigation
+| Shortcut       | Function                          |
+|----------------|-----------------------------------|
+| `CTRL + A`     | Jump to line start                |
+| `CTRL + E`     | Jump to line end                  |
+| `← →`          | Move character by character       |
+
+#### Command History
+| Shortcut       | Function                          |
+|----------------|-----------------------------------|
+| `↑`            | Previous command                  |
+| `↓`            | Next command (after using `↑`)    |
+
+#### Auto-completion
+| Shortcut       | Function                          |
+|----------------|-----------------------------------|
+| `TAB`          | Show completion suggestions       |
+
+> **Note**: All shortcuts require cursor focus in terminal.
+
+---
+
+### Linux Shells Overview
+
+#### Shell Basics
+- **Function**: Acts as command-line interpreter (user-system translator)
+- **Process**: 
+  1. Interprets user commands
+  2. Communicates with kernel
+  3. Returns system responses
+
+#### Common Shell Types
+| Shell       | Indicator | Notable Features               |
+|-------------|-----------|---------------------------------|
+| **bash**    | `$`       | Default in most Linux distros   |
+| **zsh**     | `%`       | Modern alternative to bash      |
+| **ksh**     | `$`       | Combines features of bash/csh   |
+| **csh**     | `%`       | C-like syntax                   |
+| **tcsh**    | `%`       | Enhanced csh with completion    |
+
+#### Why Bash Dominates Cybersecurity
+- Pre-installed on nearly all Linux systems
+- Consistent behavior across distributions
+- Extensive scripting capabilities
+- Default shell for most security tools
+
+> **Course Note**: All exercises will use bash (indicated by `$` prompt)
+
+### Key Takeaways
+1. Shells bridge user commands and system operations
+2. Bash is industry standard for security work
+3. Shell differences mainly affect advanced functionality
+4. Prompt symbols vary (`$` for bash/ksh, `%` for zsh/csh)
+
+---
+
+### Terms and Definitions from Module 2
+
+**Application**: A program that performs a specific task.
+
+**Bash**: The default shell in most Linux distributions.
+
+**CentOS**: An open-source distribution that is closely related to Red Hat.
+
+**Central Processing Unit (CPU)**: A computer's main processor, which is used to perform general computing tasks on a computer.
+
+**Command**: An instruction telling the computer to do something.
+
+**Digital forensics**: The practice of collecting and analyzing data to determine what has happened after an attack.
+
+**Directory**: A file that organizes where other files are stored.
+
+**Distributions**: The different versions of Linux.
+
+**File path**: The location of a file or directory.
+
+**Filesystem Hierarchy Standard (FHS)**: The component of the Linux OS that organizes data.
+
+**Graphical user interface (GUI)**: A user interface that uses icons on the screen to manage different tasks on the computer.
+
+**Hard drive**: A hardware component used for long-term memory.
+
+**Hardware**: The physical components of a computer.
+
+**Internal hardware**: The components required to run the computer.
+
+**Kali Linux ™**: An open-source distribution of Linux that is widely used in the security industry.
+
+**Kernel**: The component of the Linux OS that manages processes and memory.
+
+**Linux**: An open source operating system.
+
+**Package**: A piece of software that can be combined with other packages to form an application.
+
+**Package manager**: A tool that helps users install, manage, and remove packages or applications.
+
+**Parrot**: An open-source distribution that is commonly used for security.
+
+**Penetration test (pen test)**: A simulated attack that helps identify vulnerabilities in systems, networks, websites, applications, and processes.
+
+**Peripheral devices**: Hardware components that are attached and controlled by the computer system.
+
+**Random Access Memory (RAM)**: A hardware component used for short-term memory.
+
+**Red Hat® Enterprise Linux®**: A subscription-based distribution of Linux built for enterprise use.
+
+**Shell**: The command-line interpreter.
+
+**Standard error**: An error message returned by the OS through the shell.
+
+**Standard input**: Information received by the OS via the command line.
+
+**Standard output**: Information returned by the OS through the shell.
+
+**String data**: Data consisting of an ordered sequence of characters.
+
+**Ubuntu**: An open-source, user-friendly distribution that is widely used in security and other industries.
+
+**User**: The person interacting with a computer.
+
+---
+---

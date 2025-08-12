@@ -631,3 +631,75 @@ _(Trademark of OffSec)_
 
 ---
 
+### Permission commands
+Previously explored file permissions and the commands used to display and change them, with a focus on applying the principle of least privilege.
+
+#### Reading permissions
+Permissions in Linux are represented with a **10-character string**.  
+- **read (r)**: Files – read contents; Directories – list contents.  
+- **write (w)**: Files – modify contents; Directories – create/delete files.  
+- **execute (x)**: Files – run as program; Directories – enter and access files.  
+
+**Owner types**:  
+- **user (u)**: Owner of the file.  
+- **group (g)**: Group the owner is part of.  
+- **other (o)**: All other users.
+
+##### 10-character string breakdown
+| Position | Example    | Meaning                                        | 
+|----------|------------|------------------------------------------------|
+| 1st      | drwxrwxrwx | File type: `d` = directory, `-` = regular file |
+| 2nd      | drwxrwxrwx | User read (`r` / `-`)                          |
+| 3rd      | drwxrwxrwx | User write (`w` / `-`)                         |
+| 4th      | drwxrwxrwx | User execute (`x` / `-`)                       |
+| 5th      | drwxrwxrwx | Group read (`r` / `-`)                         |
+| 6th      | drwxrwxrwx | Group write (`w` / `-`)                        |
+| 7th      | drwxrwxrwx | Group execute (`x` / `-`)                      |
+| 8th      | drwxrwxrwx | Other read (`r` / `-`)                         |
+| 9th      | drwxrwxrwx | Other write (`w` / `-`)                        |
+| 10th     | drwxrwxrwx | Other execute (`x` / `-`)                      |
+
+#### Exploring existing permissions
+The `ls` command can display permissions. Useful options:  
+- **`ls -a`**: Show hidden files (start with `.`).  
+- **`ls -l`**: Show permissions, owner, group, size, last modified time.  
+- **`ls -la`**: Combine both – includes hidden files with details.
+
+#### Changing permissions
+The **principle of least privilege** ensures users only have necessary access.
+
+The `chmod` command changes file/directory permissions.
+
+##### Using chmod
+Syntax: `chmod [who][operator][permissions] filename`  
+| Component   | Options       | Meaning                     |
+|-------------|---------------|-----------------------------|
+| Who         | `u`, `g`, `o` | user, group, other          |
+| Operator    | `+`, `-`, `=` | add, remove, assign exactly |
+| Permissions | `r`, `w`, `x` | read, write, execute        |
+
+##### Common chmod Examples
+| Command                          | Meaning                                                         | 
+|----------------------------------|-----------------------------------------------------------------|
+| chmod u+rwx,g+rwx,o+rwx file.txt | Add all permissions for all                                     |
+| chmod u-rwx,g-rwx,o-rwx file.txt | Remove all permissions from all                                 |
+| chmod u=r,g=r,o=r file.txt       | Set read-only for all                                           |
+| chmod u+r,g-w,o=r file.txt       | Add read for user, remove write from group, set read for others |
+
+##### The principle of least privilege in action
+Example scenario:  
+- File: `bonuses.txt`, owned by `hrrep1` (Human Resources)  
+- Initial permissions: `-rw-rw----` → user and group have read/write  
+- Requirement: Only `hrrep1` should have access  
+- Fix:  
+`chmod g-rw bonuses.txt`  
+
+> Now only the owner has required permissions.
+
+##### Key takeaways
+- Use `ls -l` or `ls -la` to check permissions  
+- Use `chmod` to modify them according to the principle of least privilege  
+- Understand permission strings to manage file security effectively
+
+---
+

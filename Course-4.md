@@ -604,7 +604,7 @@ _(Trademark of OffSec)_
 
 #### Directory Commands
 | Command | Function               | Example                            |
-|------- -|------------------------|------------------------------------|
+|---------|------------------------|------------------------------------|
 | `mkdir` | Create directory       | `mkdir /home/analyst/logs/network` |
 | `rmdir` | Remove empty directory | `rmdir /home/analyst/logs/network` |
 

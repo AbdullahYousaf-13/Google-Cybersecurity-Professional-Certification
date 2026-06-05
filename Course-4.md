@@ -1122,7 +1122,7 @@ AND login_status = 'Failed';
 - Narrow incident data quickly
 
 #### Key takeaways
-- Use `IS NULL` to locate missing values
+- Use `IS NULL` to locate the missing values
 - Use parentheses to clarify logic in combined conditions
 - Careful filtering improves investigation accuracy
 

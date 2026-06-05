@@ -1215,3 +1215,7 @@ ON employees.employee_id = devices.employee_id;
 - The command line provides speed, flexibility, and auditability
 - SQL helps analysts retrieve, filter, and join large amounts of structured data
 - Together, Linux and SQL improve investigation, monitoring, and incident response capabilities
+
+---
+---
+---

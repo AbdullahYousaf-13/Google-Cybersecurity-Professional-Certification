@@ -658,7 +658,7 @@ Threat modeling is the process of identifying potential threats, vulnerabilities
 ---
 
 ### Staying Ahead of Threat Actors
-Security professionals need continuous awareness of how attackers operate
+Security professionals need continuous awareness of how attackers operate.
 
 #### Common ways teams stay prepared
 - Monitor threat intelligence sources

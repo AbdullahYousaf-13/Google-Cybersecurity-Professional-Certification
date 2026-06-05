@@ -704,3 +704,514 @@ Example scenario:
 ---
 
 Add and delete users
+
+Managing users is an important part of system administration and cybersecurity. Analysts need to understand how users are created, modified, and removed so they can help enforce access control.
+
+#### Superuser privileges
+Some user management tasks require elevated privileges.
+
+- **root**: The superuser account with full system access
+- **sudo**: Temporarily grants elevated privileges to approved users
+
+> **Security Note**: Use `sudo` only when necessary and follow the principle of least privilege.
+
+#### User management commands
+| Command | Function | Example |
+|---------|----------|---------|
+| `useradd` | Add a new user | `sudo useradd analyst1` |
+| `userdel` | Delete a user | `sudo userdel analyst1` |
+| `usermod` | Modify a user | `sudo usermod -g security analyst1` |
+| `passwd` | Set or change password | `sudo passwd analyst1` |
+| `id` | Display user and group IDs | `id analyst1` |
+
+#### Common options
+| Option | Used With | Function |
+|--------|-----------|----------|
+| `-m` | `useradd` | Create a home directory |
+| `-d` | `useradd` | Specify home directory |
+| `-g` | `usermod` | Change primary group |
+| `-G` | `usermod` | Assign supplementary groups |
+| `-r` | `userdel` | Remove home directory with user |
+
+#### Example workflow
+##### Add a new user
+`sudo useradd -m analyst1`
+
+##### Set the user's password
+`sudo passwd analyst1`
+
+##### Add the user to a group
+`sudo usermod -G security analyst1`
+
+##### Delete the user later
+`sudo userdel -r analyst1`
+
+#### Why this matters in cybersecurity
+- Limits unnecessary access
+- Helps track accountability by user account
+- Reduces risk from shared or excessive privileges
+
+#### Key takeaways
+- Use `useradd`, `usermod`, and `userdel` for account management
+- Elevated privileges are usually required for these tasks
+- Proper account management supports secure authentication and authorization
+
+---
+
+### Ownership and Authentication in Linux
+
+In Linux, files and directories are associated with owners and groups. Security analysts need to understand ownership because it directly affects access control.
+
+#### File and directory ownership
+Every file has:
+- A **user owner**
+- A **group owner**
+
+The `ls -l` command displays both.
+
+Example:
+`-rw-r----- 1 analyst1 security 120 report.txt`
+
+In this example:
+- `analyst1` is the user owner
+- `security` is the group owner
+
+#### Ownership commands
+| Command | Function | Example |
+|---------|----------|---------|
+| `chown` | Change file owner | `sudo chown analyst1 report.txt` |
+| `chgrp` | Change group owner | `sudo chgrp security report.txt` |
+
+#### Changing owner and group together
+`sudo chown analyst1:security report.txt`
+
+#### Authentication vs. Authorization
+These two terms are closely related but different:
+
+##### Authentication
+Verifies identity.
+- Example: Logging in with a username and password
+
+##### Authorization
+Determines what a user is allowed to do.
+- Example: Whether a user can read or modify a file
+
+#### Why ownership matters
+- Controls who can access sensitive files
+- Supports separation of duties
+- Helps enforce the principle of least privilege
+
+#### Key takeaways
+- `chown` changes the owner of a file or directory
+- `chgrp` changes the group ownership
+- Authentication confirms identity, while authorization controls access
+
+---
+
+### Getting Help in Linux
+
+Security analysts frequently work with unfamiliar commands. Linux provides built-in tools to learn command usage directly from the terminal.
+
+#### Help resources
+| Command | Function | Example |
+|---------|----------|---------|
+| `man` | Open manual page | `man chmod` |
+| `whatis` | Short command description | `whatis grep` |
+| `apropos` | Search manual page descriptions | `apropos password` |
+| `help` | Help for shell built-ins | `help cd` |
+
+#### Manual pages
+The `man` command opens a manual page for a command.
+
+Example:
+`man grep`
+
+Useful navigation inside `man`:
+- `Space`: Next page
+- `b`: Previous page
+- `/word`: Search for text
+- `q`: Quit
+
+#### Why help commands matter
+- Reduce mistakes when using powerful commands
+- Improve efficiency during investigations
+- Provide fast access to syntax and options
+
+#### Key takeaways
+- `man` is the primary command reference in Linux
+- `help` is useful for shell built-ins like `cd`
+- `whatis` and `apropos` help when you know little or only part of a command's purpose
+
+---
+
+### Terms and Definitions from Module 3
+
+**Absolute file path**: The full path to a file or directory starting from the root directory.
+
+**Authentication**: The process of verifying who someone is.
+
+**Authorization**: The concept of granting access to specific resources in a system.
+
+**chmod**: A Linux command used to change permissions on files and directories.
+
+**chown**: A Linux command used to change the owner of a file or directory.
+
+**current working directory**: The directory that a user is currently in.
+
+**grep**: A Linux command used to search for specific text in a file.
+
+**hidden file**: A file in Linux that begins with a period (`.`).
+
+**id**: A Linux command that displays user and group identification information.
+
+**least privilege**: The concept of granting only the minimum access and authorization required to complete a task or function.
+
+**man**: A Linux command that displays the manual page for another command.
+
+**relative file path**: A path to a file or directory that starts from the user's current working directory.
+
+**root directory**: The highest-level directory in the Linux filesystem, represented by `/`.
+
+**sudo**: A command that temporarily grants elevated permissions.
+
+**useradd**: A Linux command used to create a new user account.
+
+**userdel**: A Linux command used to remove a user account.
+
+**usermod**: A Linux command used to modify an existing user account.
+
+---
+---
+
+## Module 4
+
+### Introduction to Databases
+
+Databases help store, organize, and retrieve information efficiently. In cybersecurity, analysts often use databases to review logs, investigate events, and monitor assets.
+
+#### What is a database?
+A **database** is an organized collection of information or data.
+
+Examples of data stored in databases:
+- Employee records
+- Login events
+- Device inventories
+- Security alerts
+
+#### Why databases matter in cybersecurity
+- Store large amounts of structured information
+- Make searching and reporting faster
+- Support investigation and monitoring workflows
+
+#### Relational databases
+A **relational database** organizes data into tables.
+
+Each table contains:
+- **Rows**: Individual records
+- **Columns**: Specific attributes of those records
+
+Example:
+
+| employee_id | name   | department |
+|-------------|--------|------------|
+| 101         | Aisha  | Security   |
+| 102         | Hamza  | IT         |
+
+#### Database management systems
+A **database management system (DBMS)** is software used to create, manage, and interact with databases.
+
+Common examples:
+- MySQL
+- PostgreSQL
+- Oracle Database
+- Microsoft SQL Server
+- SQLite
+
+#### Key takeaways
+- Databases store and organize data for efficient access
+- Relational databases use tables, rows, and columns
+- DBMS tools make it possible to manage and query stored data
+
+---
+
+### SQL Basics
+
+**Structured Query Language (SQL)** is used to communicate with relational databases. Security analysts use SQL to retrieve, filter, and analyze data.
+
+#### Common SQL statements
+| Statement | Function |
+|-----------|----------|
+| `SELECT`  | Retrieve data from a table |
+| `FROM`    | Specify the table to query |
+| `ORDER BY`| Sort query results |
+
+#### Basic query structure
+```sql
+SELECT column1, column2
+FROM table_name;
+```
+
+#### Example queries
+##### Select all columns
+```sql
+SELECT *
+FROM employees;
+```
+
+##### Select specific columns
+```sql
+SELECT name, department
+FROM employees;
+```
+
+##### Sort results
+```sql
+SELECT name, department
+FROM employees
+ORDER BY name;
+```
+
+#### `ORDER BY` options
+| Keyword | Function |
+|---------|----------|
+| `ASC`   | Sort in ascending order |
+| `DESC`  | Sort in descending order |
+
+Example:
+```sql
+SELECT username, login_time
+FROM logins
+ORDER BY login_time DESC;
+```
+
+#### Key takeaways
+- SQL is used to interact with relational databases
+- `SELECT` retrieves data
+- `FROM` identifies the table
+- `ORDER BY` sorts the output
+
+---
+
+### Filter a SQL Query
+
+Filtering helps analysts focus only on the records they need. This is especially useful when reviewing large datasets.
+
+#### The `WHERE` clause
+The `WHERE` clause filters records based on specified conditions.
+
+```sql
+SELECT *
+FROM employees
+WHERE department = 'Security';
+```
+
+#### Comparison operators
+| Operator | Meaning |
+|----------|---------|
+| `=`      | Equal to |
+| `!=`     | Not equal to |
+| `>`      | Greater than |
+| `<`      | Less than |
+| `>=`     | Greater than or equal to |
+| `<=`     | Less than or equal to |
+
+#### Filter by numeric value
+```sql
+SELECT *
+FROM employees
+WHERE employee_id > 200;
+```
+
+#### Filter by date
+```sql
+SELECT *
+FROM logins
+WHERE login_date = '2025-10-19';
+```
+
+#### Combining conditions
+| Operator | Function |
+|----------|----------|
+| `AND`    | Both conditions must be true |
+| `OR`     | At least one condition must be true |
+| `NOT`    | Excludes a condition |
+
+Example with `AND`:
+```sql
+SELECT *
+FROM logins
+WHERE department = 'Security'
+AND login_status = 'Failed';
+```
+
+Example with `OR`:
+```sql
+SELECT *
+FROM employees
+WHERE department = 'Security'
+OR department = 'IT';
+```
+
+#### Pattern matching with `LIKE`
+| Wildcard | Function |
+|----------|----------|
+| `%`      | Matches zero or more characters |
+| `_`      | Matches exactly one character |
+
+Example:
+```sql
+SELECT *
+FROM employees
+WHERE name LIKE 'A%';
+```
+
+#### Range and list filtering
+##### `BETWEEN`
+```sql
+SELECT *
+FROM logins
+WHERE login_hour BETWEEN 8 AND 17;
+```
+
+##### `IN`
+```sql
+SELECT *
+FROM employees
+WHERE department IN ('Security', 'IT', 'HR');
+```
+
+#### Key takeaways
+- `WHERE` filters rows based on conditions
+- `AND`, `OR`, and `NOT` combine or exclude conditions
+- `LIKE`, `BETWEEN`, and `IN` make filtering more flexible
+
+---
+
+### More SQL Filters
+
+Additional SQL filters help analysts work with missing values, sort through event data, and narrow investigations efficiently.
+
+#### `IS NULL` and `IS NOT NULL`
+Used to find missing or available values.
+
+```sql
+SELECT *
+FROM employees
+WHERE phone_number IS NULL;
+```
+
+```sql
+SELECT *
+FROM assets
+WHERE assigned_user IS NOT NULL;
+```
+
+#### Filtering with multiple conditions
+Parentheses help control logic in more complex queries.
+
+```sql
+SELECT *
+FROM logins
+WHERE (department = 'Security' OR department = 'IT')
+AND login_status = 'Failed';
+```
+
+#### Why this matters in cybersecurity
+- Identify failed logins
+- Detect incomplete asset records
+- Narrow incident data quickly
+
+#### Key takeaways
+- Use `IS NULL` to locate missing values
+- Use parentheses to clarify logic in combined conditions
+- Careful filtering improves investigation accuracy
+
+---
+
+### Join Tables with SQL
+
+Data is often stored across multiple related tables. SQL joins allow analysts to combine that data in a single query.
+
+#### Why joins are useful
+One table may store employee information, while another stores login activity. A join connects related records using a shared column.
+
+#### Common join concept
+- **Primary key**: A column that uniquely identifies each record in a table
+- **Foreign key**: A column in one table that references a primary key in another table
+
+#### `INNER JOIN`
+Returns only rows with matching values in both tables.
+
+```sql
+SELECT employees.name, logins.login_time
+FROM employees
+INNER JOIN logins
+ON employees.employee_id = logins.employee_id;
+```
+
+#### `LEFT JOIN`
+Returns all rows from the left table and matching rows from the right table.
+
+```sql
+SELECT employees.name, devices.device_name
+FROM employees
+LEFT JOIN devices
+ON employees.employee_id = devices.employee_id;
+```
+
+#### Join use cases in cybersecurity
+- Match users with login records
+- Associate devices with owners
+- Connect alerts to affected systems
+
+#### Key takeaways
+- Joins combine data from multiple tables
+- `INNER JOIN` returns matching records only
+- `LEFT JOIN` keeps all records from the left table
+- Shared key fields connect related data
+
+---
+
+### Terms and Definitions from Module 4
+
+**AND**: An operator that specifies that both conditions in a filter must be true.
+
+**column**: A vertical set of values in a table that represents one attribute of the stored data.
+
+**database**: An organized collection of information or data.
+
+**DBMS (database management system)**: Software used to create, manage, and interact with databases.
+
+**filter**: A condition used to limit the rows returned by a query.
+
+**foreign key**: A column in one table that refers to the primary key in another table.
+
+**INNER JOIN**: A join that returns only rows with matching values in both tables.
+
+**LIKE**: An operator used to search for a pattern in a value.
+
+**OR**: An operator that specifies that at least one condition in a filter must be true.
+
+**primary key**: A column that uniquely identifies each row in a table.
+
+**query**: A request for data from a database.
+
+**relational database**: A database that stores data in tables.
+
+**row**: A single record in a table.
+
+**SQL (Structured Query Language)**: A language used to communicate with relational databases.
+
+**table**: A collection of related data organized into rows and columns.
+
+**WHERE**: A SQL clause used to filter records.
+
+---
+
+## Final Takeaways
+
+- Linux and SQL are foundational tools for security analysts
+- Linux supports system navigation, permissions management, and user administration
+- The command line provides speed, flexibility, and auditability
+- SQL helps analysts retrieve, filter, and join large amounts of structured data
+- Together, Linux and SQL improve investigation, monitoring, and incident response capabilities

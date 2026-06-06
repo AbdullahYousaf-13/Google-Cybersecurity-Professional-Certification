@@ -23,152 +23,128 @@ You will build an understanding of the vulnerability management process. You wil
 ---
 
 ## Module 4: Threats to asset security
-You will explore common types of threats to digital asset security. You will also examine the tools and techniques used by cybercriminals to target assets. In addition, you will be introduced to the threat modeling process and examine the ways that security professionals stay ahead of security breaches.
+You will explore common types of threats to digital asset security. You will also examine the tools and techniques used by cybercriminals to target assets. In addition, you will be introduced to the threat modeling process and examine the ways security professionals stay ahead of security breaches.
 
 ---
 ---
 
 ## Module 1
 
-### Asset Security Fundamentals
-Asset security is the practice of protecting an organization's valuable resources from unauthorized access, damage, loss, or theft. In cybersecurity, assets include both physical objects and digital information.
+### Understand Risks, Threats, and Vulnerabilities
+This module starts by defining what organizations are trying to protect and why. Asset security depends on understanding the relationship between assets, threats, vulnerabilities, and risk.
 
-#### What is an asset?
-An **asset** is anything of value to an organization.
+#### Core concepts
+- **Asset**: Anything of value to an organization
+- **Threat**: Any circumstance or event that can negatively impact assets
+- **Vulnerability**: A weakness that can be exploited by a threat
+- **Risk**: Anything that can impact the confidentiality, integrity, or availability of an asset
 
-##### Common asset types
-- **Physical assets**: laptops, servers, security badges, office spaces, mobile devices
-- **Digital assets**: customer records, credentials, source code, financial data, intellectual property
-- **Cloud assets**: virtual machines, storage buckets, databases, SaaS data
+#### Security plan: three basic elements
+##### 1. Assets
+- Physical examples: buildings, devices, badges, people
+- Digital examples: files, credentials, databases, software
 
-#### Why asset security matters
-- Supports confidentiality, integrity, and availability
-- Reduces operational and financial risk
-- Protects sensitive information and business processes
-- Helps organizations meet legal and regulatory requirements
+##### 2. Threats
+- Can be intentional or unintentional
+- Can come from internal or external sources
 
-#### Key takeaways
-- Assets can be physical, digital, or cloud-based
-- Not all assets have the same value or sensitivity
-- Security efforts should prioritize the most critical assets first
+##### 3. Vulnerabilities
+- Technical weaknesses such as outdated software
+- Human weaknesses such as poor security awareness
+
+#### Key idea
+Risk exists when a threat can exploit a vulnerability to affect an asset.
 
 ---
 
-### Asset Classification
-Organizations classify assets so they can apply the right level of protection. Classification helps security teams prioritize controls, access restrictions, and monitoring.
+### Security Starts with Asset Classification
+Organizations cannot protect everything in the same way. Asset classification helps determine which data and systems need stronger safeguards.
+
+#### Asset management terms
+- **Asset management**: The process of tracking assets and the risks that affect them
+- **Asset inventory**: A catalog of assets that need protection
+- **Asset classification**: Labeling assets based on sensitivity and business value
 
 #### Common classification levels
-| Classification | Meaning | Example |
-|----------------|---------|---------|
-| **Public** | Safe to share widely | Marketing content |
-| **Internal** | Intended for employees only | Internal procedures |
-| **Confidential** | Sensitive business information | Employee records |
-| **Restricted** | Highest sensitivity | Encryption keys, customer PII |
+| Classification | Description |
+|----------------|-------------|
+| **Public** | Intended for anyone |
+| **Internal only** | Intended for people inside the organization |
+| **Confidential** | Limited to specific authorized personnel |
+| **Restricted** | Highly sensitive, with very limited access |
 
-#### Classification factors
-- Business value
-- Sensitivity of the data
-- Legal or compliance requirements
-- Operational impact if compromised
-
-#### Data handling examples
-- Restrict access to confidential files
-- Encrypt sensitive data at rest and in transit
-- Apply retention and disposal rules
-- Log access to critical information
-
-#### Key takeaways
-- Asset classification helps determine appropriate security controls
-- Sensitive assets require stronger access restrictions and monitoring
-- Classification should be documented and consistently enforced
+#### Why classification matters
+- Helps apply the right controls
+- Supports compliance and privacy requirements
+- Reduces overexposure of sensitive data
 
 ---
 
-### Digital Assets and the Expanding Attack Surface
-Digital transformation has increased the number of assets organizations must secure. Every connected system, cloud workload, account, and application can expand the attack surface.
+### Assets in a Digital World
+Modern organizations store and process large amounts of digital information. This increases the number of assets that require security controls.
 
-#### Common digital assets
-- User accounts
-- Databases
-- Web applications
-- Endpoints
-- APIs
-- Cloud services
+#### States of data
+| State | Meaning |
+|-------|---------|
+| **In use** | Data currently being accessed or processed |
+| **In transit** | Data moving across a network |
+| **At rest** | Data stored on a device or system |
 
-#### Attack surface
-The **attack surface** is the total number of possible entry points an attacker can use to access or damage assets.
+#### Cloud security
+The course also introduces the emergence of cloud security.
 
-##### Examples of attack surface expansion
-- Unused open ports
-- Unpatched software
-- Misconfigured cloud storage
-- Shared credentials
-- Shadow IT tools
+##### Important cloud ideas
+- Cloud systems increase flexibility and scale
+- They also increase the number of digital assets to track
+- Misconfigurations can expose sensitive data
+- Organizations still remain responsible for protecting their data
 
-#### Cloud security considerations
-- Shared responsibility between customer and provider
-- Configuration errors can expose data publicly
-- Identity and access management is critical
-- Continuous monitoring is required
-
-#### Key takeaways
-- More digital assets usually mean more possible vulnerabilities
-- Attack surface reduction is a core security goal
-- Cloud systems require strong configuration and access management
+#### Key idea
+The more digital systems an organization relies on, the more important visibility, classification, and access control become.
 
 ---
 
-### Security Plans and Risk-Based Protection
-A security plan outlines how an organization will protect assets, reduce risk, and respond to security events.
+### Elements of a Security Plan
+Security programs rely on documented guidance so people and systems handle assets consistently.
 
-#### Common elements of a security plan
-- Asset inventory
-- Risk assessment
-- Security controls
-- Access management procedures
-- Monitoring and logging
-- Incident response steps
-- Recovery and continuity planning
+#### Key documentation types
+- **Policy**: A set of rules that reduces risk and protects information
+- **Standards**: References used to support and inform policies
+- **Procedures**: Step-by-step instructions for completing security tasks
 
-#### Risk scoring basics
-Risk is often evaluated based on:
-- **Likelihood**: how probable a threat is
-- **Impact**: how serious the damage would be
+#### Related concepts
+- **Compliance**: Following internal standards and external regulations
+- **Regulations**: Rules created by governments or other authorities
 
-Simple model:
-`Risk = Likelihood x Impact`
-
-#### Why risk-based security matters
-- Resources are limited
-- Not every system needs the same level of protection
-- High-value assets should receive stronger controls
+#### Why this matters
+- Security work needs consistency
+- Policies and procedures support accountability
+- Clear standards make audits and enforcement easier
 
 ---
 
-### NIST Cybersecurity Framework (CSF)
-The NIST CSF helps organizations manage and reduce cybersecurity risk using a set of core functions.
+### The NIST Cybersecurity Framework
+This course continues building on the NIST CSF introduced earlier in the certificate.
 
-#### NIST CSF core functions
-| Function | Purpose |
-|----------|---------|
-| **Identify** | Understand assets, risks, and business context |
-| **Protect** | Apply safeguards to reduce risk |
-| **Detect** | Discover security events quickly |
-| **Respond** | Take action during incidents |
-| **Recover** | Restore normal operations |
-| **Govern** | Align cybersecurity strategy, policy, and oversight |
+#### NIST CSF
+A voluntary framework of standards, guidelines, and best practices for managing cybersecurity risk.
 
-#### Applying the framework to asset security
-- Identify critical systems and data
-- Protect them with controls
-- Detect suspicious activity
-- Respond to threats
-- Recover from disruption
+#### Core functions
+1. **Identify**
+2. **Protect**
+3. **Detect**
+4. **Respond**
+5. **Recover**
 
-#### Key takeaways
-- NIST CSF provides a practical structure for cybersecurity planning
-- Asset identification is the foundation of asset security
-- The framework supports risk-based decision making
+#### Additional framework concepts
+##### Tiers
+Used to describe how mature or effective an organization's cybersecurity practices are.
+
+##### Profiles
+Used to compare the current state of security with the desired target state.
+
+#### Key idea
+The framework helps organizations connect asset protection decisions to risk management and business needs.
 
 ---
 
@@ -176,194 +152,202 @@ The NIST CSF helps organizations manage and reduce cybersecurity risk using a se
 
 **asset**: An item perceived as having value to an organization.
 
-**asset classification**: The process of labeling assets based on sensitivity and business value.
+**asset classification**: The practice of labeling assets based on sensitivity and importance to an organization.
 
-**attack surface**: The total number of possible entry points through which an attacker can access a system or data.
+**asset inventory**: A catalog of assets that need to be tracked and protected.
 
-**cloud security**: The practices and technologies used to protect cloud-based systems, applications, and data.
+**asset management**: The process of tracking assets and the risks that affect them.
 
-**confidential data**: Sensitive information that should only be accessible to authorized users.
+**compliance**: The process of adhering to internal standards and external regulations.
 
-**data owner**: The person or group responsible for deciding how specific data is protected and used.
+**policy**: A set of rules that reduces risk and protects information.
 
-**digital asset**: An electronic resource of value, such as data, credentials, applications, or systems.
+**procedure**: Step-by-step instructions used to complete a specific security task.
 
-**govern**: A NIST CSF core function focused on cybersecurity strategy, oversight, and accountability.
+**risk**: Anything that can impact the confidentiality, integrity, or availability of an asset.
 
-**inventory**: A documented list of assets that an organization owns or manages.
+**standard**: A reference that informs how policies and procedures are applied.
 
-**NIST Cybersecurity Framework (CSF)**: A framework of standards, guidelines, and best practices used to manage cybersecurity risk.
+**threat**: Any circumstance or event that can negatively impact assets.
 
-**restricted data**: Highly sensitive information that requires the strongest security protections.
-
-**risk assessment**: The process of identifying and evaluating threats, vulnerabilities, likelihood, and impact.
+**vulnerability**: A weakness that can be exploited by a threat.
 
 ---
 ---
 
 ## Module 2
 
-### Security Controls That Protect Assets
-Security controls are safeguards that help reduce risk to assets. They are used to prevent, detect, or correct security issues.
+### Security Controls
+This module focuses on the safeguards organizations use to protect assets.
 
-#### Main control categories
-| Control Type | Purpose | Example |
-|--------------|---------|---------|
-| **Administrative** | Policies and procedures | Security awareness training |
-| **Technical** | Technology-based safeguards | Firewalls, MFA, encryption |
-| **Physical** | Protection of facilities and devices | Locks, badges, cameras |
+#### Security controls
+Security controls are safeguards designed to reduce specific security risks.
 
-#### Control functions
-- **Preventive**: stop incidents before they happen
-- **Detective**: identify incidents in progress or after they occur
-- **Corrective**: restore systems and reduce damage
-- **Deterrent**: discourage malicious activity
+#### Major control types covered in the course
+- **Technical controls**: Technology used to protect assets, such as encryption
+- **Operational controls**: Processes and human-centered practices, such as awareness training
+- **Managerial controls**: Governance tools such as policies, standards, and procedures
 
-#### Key takeaways
-- Controls are selected based on the value of the asset and the risk involved
-- Strong asset protection usually requires layered controls
-- Security controls support privacy and access management goals
+#### Why controls matter
+- They reduce risk to data and systems
+- They support privacy and compliance
+- They help enforce least privilege and accountability
 
 ---
 
-### Privacy and Data Protection
-Privacy focuses on the proper handling of personal and sensitive information. Asset security and privacy overlap because many assets contain data about people.
+### Principle of Least Privilege and Data Roles
+Users and systems should receive only the access needed to perform their tasks.
 
-#### Sensitive data examples
-- Personally identifiable information (PII)
-- Protected health information (PHI)
-- Financial account data
-- Authentication credentials
+#### Principle of least privilege
+Give users only the minimum permissions necessary to do their work.
 
-#### Privacy principles
-- Collect only necessary data
-- Limit access to authorized users
-- Retain data only as long as needed
-- Dispose of data securely
-- Be transparent about data use
+#### Common data-related roles
+- **Data owner**: The person who decides how data can be accessed, edited, used, or destroyed
+- **Data custodian**: The person or system responsible for safe handling, transport, and storage of data
+- **Data steward**: The person or group that maintains data governance policies
 
-#### Why privacy matters in cybersecurity
-- Data misuse can harm individuals and organizations
-- Legal penalties may result from poor data handling
-- Trust is damaged when personal information is exposed
+#### Common account types
+- **Guest account**: Very limited access for outside users
+- **User account**: Standard employee access
+- **Service account**: Used by applications and systems
+- **Privileged account**: Elevated administrative access
+
+#### Key idea
+Access should be based on role and necessity, not convenience.
 
 ---
 
-### Encryption Basics
-Encryption protects data by converting readable information into an unreadable format that can only be reversed with the proper key.
+### The Data Lifecycle and Privacy
+The course connects asset protection with privacy and proper data handling.
 
-#### Encryption states
-| State | Meaning |
+#### Data lifecycle
+1. **Collect**
+2. **Store**
+3. **Use**
+4. **Archive**
+5. **Destroy**
+
+#### Why privacy matters
+- Sensitive data needs stronger protections
+- Data should only be retained as long as necessary
+- Mishandling personal data can create legal and reputational risk
+
+#### Related topic
+The module also introduces privacy regulations and compliance expectations that affect how organizations manage sensitive information.
+
+---
+
+### Fundamentals of Cryptography
+Cryptography helps protect digital assets, especially private and sensitive information.
+
+#### Symmetric encryption
+- Uses the same secret key to encrypt and decrypt data
+- Often used for speed and efficiency
+- Examples mentioned in the course: `AES`, `3DES`
+
+#### Asymmetric encryption
+- Uses a public key and a private key
+- Public key encrypts, private key decrypts
+- Examples mentioned in the course: `RSA`, `DSA`
+
+#### Public Key Infrastructure (PKI)
+PKI is an encryption framework that:
+- Secures the exchange of information online
+- Uses digital certificates to establish trust between systems
+
+#### Key idea
+Encryption protects confidentiality, but trust and key handling are equally important.
+
+---
+
+### Non-Repudiation and Hashing
+The course also introduces hashing and its relationship to integrity and trust.
+
+#### Hashing
+- Converts input data into a fixed-length value
+- Used to verify integrity
+- Not meant to be reversed like encryption
+
+#### Non-repudiation
+Non-repudiation helps prove the authenticity of information so that its origin or action cannot reasonably be denied.
+
+#### Why hashing matters
+- Detects changes to files or messages
+- Supports password security and integrity checking
+- Works with other mechanisms to build trust
+
+---
+
+### Access Controls and Authentication Systems
+This module introduces AAA and common access control approaches.
+
+#### AAA framework
+##### Authentication
+Answers: **Who are you?**
+
+Common factors:
+1. **Knowledge**: Something the user knows
+2. **Ownership**: Something the user has
+3. **Characteristic**: Something the user is
+
+##### Authorization
+Answers: **What can you do?**
+
+##### Accounting
+Answers: **What happened?**
+
+#### Additional concepts
+- **Separation of duties**: Users should not have enough permissions to improperly influence their own actions
+- **Single sign-on (SSO)** and **multi-factor authentication (MFA)** strengthen access management
+- **Identity and access management (IAM)** helps control identities and permissions at scale
+
+#### Common access control models
+| Model | Meaning |
 |-------|---------|
-| **Data at rest** | Stored data, such as files or database records |
-| **Data in transit** | Data moving across a network |
-| **Data in use** | Data currently being processed by a system |
+| **MAC** | Mandatory access control |
+| **DAC** | Discretionary access control |
+| **RBAC** | Role-based access control |
 
-#### Symmetric vs. asymmetric encryption
-| Type | Description | Example Use |
-|------|-------------|-------------|
-| **Symmetric** | Same key encrypts and decrypts data | Disk encryption |
-| **Asymmetric** | Public key encrypts, private key decrypts | TLS, secure email |
-
-#### Common uses of encryption
-- Protecting laptops and mobile devices
-- Securing web traffic with HTTPS
-- Encrypting backups
-- Protecting cloud storage
-
-#### Key takeaways
-- Encryption helps preserve confidentiality
-- Key management is just as important as encryption itself
-- Sensitive assets should be encrypted whenever practical
-
----
-
-### Hashing and Integrity
-Hashing transforms data into a fixed-length value. Unlike encryption, hashing is not meant to be reversed.
-
-#### Why hashing is useful
-- Verifies file integrity
-- Protects stored passwords when implemented properly
-- Detects unauthorized changes to data
-
-#### Password storage best practices
-- Use strong hashing algorithms
-- Add a **salt** to make hashes harder to crack
-- Avoid storing plaintext passwords
-
-#### Encryption vs. hashing
-| Method | Reversible? | Primary Purpose |
-|--------|-------------|-----------------|
-| **Encryption** | Yes, with a key | Confidentiality |
-| **Hashing** | No | Integrity and verification |
-
-#### Key takeaways
-- Hashing is commonly used for integrity checks and password security
-- Salting reduces the effectiveness of rainbow table attacks
-- Encryption and hashing solve different security problems
-
----
-
-### Authentication, Authorization, and Access Controls
-Security teams protect assets by verifying user identity and limiting what verified users can do.
-
-#### Authentication
-Confirms who a user is.
-
-Examples:
-- Password
-- Security token
-- Fingerprint
-- One-time passcode
-
-#### Authorization
-Determines what an authenticated user is allowed to access or do.
-
-Examples:
-- Read-only access to reports
-- Admin rights for server maintenance
-- Temporary access to a customer record
-
-#### Common access control concepts
-- **Least privilege**: give only the minimum access required
-- **Separation of duties**: split high-risk tasks between multiple people
-- **Need to know**: restrict sensitive information to those who require it
-- **Multi-factor authentication (MFA)**: require two or more verification methods
-
-#### Key takeaways
-- Authentication verifies identity
-- Authorization controls permissions
-- Strong access controls reduce the chance of insider misuse and account compromise
+#### Key idea
+Authentication confirms identity, authorization limits access, and accounting records activity.
 
 ---
 
 ### Terms and Definitions from Module 2
 
-**access control**: A security measure that manages who can access a system, application, or data.
+**access control**: A security measure that manages access to systems, applications, or data.
 
-**administrative control**: A security safeguard based on policy, procedure, or process.
+**accounting**: The process of tracking what actions users performed in a system.
 
-**asymmetric encryption**: A type of encryption that uses a public key and a private key.
+**asymmetric encryption**: Encryption that uses a public key and a private key.
 
 **authentication**: The process of verifying who someone is.
 
 **authorization**: The concept of granting access to specific resources in a system.
 
-**ciphertext**: Data that has been encrypted into an unreadable format.
+**data custodian**: A person or system responsible for the safe handling, transport, and storage of data.
 
-**encryption**: The process of converting data from a readable format to an encoded format.
+**data lifecycle**: The sequence of stages data moves through from collection to destruction.
 
-**hash**: A fixed-length value created by a hashing algorithm from input data.
+**data owner**: The person responsible for decisions about how data is accessed and used.
 
-**hashing**: The transformation of data into a fixed-length value used for integrity and verification.
+**data steward**: The person or group that maintains data governance policies.
 
-**least privilege**: The principle of granting only the minimum access necessary to perform a task.
+**hashing**: The process of converting data into a fixed-length value for integrity verification.
 
-**multi-factor authentication (MFA)**: An authentication method that requires two or more forms of verification.
+**multi-factor authentication (MFA)**: An authentication method that uses two or more forms of verification.
 
-**salt**: Random data added before hashing to make password attacks more difficult.
+**non-repudiation**: Assurance that the origin or action associated with information cannot be denied.
 
-**symmetric encryption**: A type of encryption that uses the same key for encryption and decryption.
+**principle of least privilege**: Granting only the minimum access necessary to complete a task.
+
+**Public Key Infrastructure (PKI)**: A framework that uses encryption and digital certificates to establish trust online.
+
+**role-based access control (RBAC)**: An access control model where permissions are assigned according to job role.
+
+**single sign-on (SSO)**: An authentication method that allows a user to sign in once to access multiple systems.
+
+**symmetric encryption**: Encryption that uses the same secret key to encrypt and decrypt data.
 
 ---
 ---
@@ -371,360 +355,381 @@ Examples:
 ## Module 3
 
 ### Vulnerability Management
-Vulnerability management is the ongoing process of identifying, evaluating, prioritizing, and reducing weaknesses in systems and applications.
+This module explains how organizations identify and address weaknesses before they are exploited.
 
-#### Common vulnerability management steps
-1. Identify assets
-2. Scan for vulnerabilities
-3. Analyze findings
-4. Prioritize based on risk
-5. Remediate or mitigate
-6. Verify the fix
-7. Continue monitoring
+#### Vulnerability management process
+1. **Identify vulnerabilities**
+2. **Consider potential exploits**
+3. **Prepare defenses against threats**
+4. **Evaluate defenses**
 
-#### Why it matters
-- Systems change constantly
-- New flaws are discovered every day
-- Unpatched vulnerabilities can become entry points for attackers
+#### Important term
+- **Zero-day**: A vulnerability that becomes known when there are zero days available to fix it before exploitation risk begins
 
-#### Key takeaways
-- Vulnerability management is continuous, not one-time
-- Prioritization is necessary because not all findings are equally urgent
-- Asset context helps determine which vulnerabilities matter most
+#### Key idea
+Vulnerability management is continuous because systems, software, and attack methods constantly change.
+
+---
+
+### Defense in Depth Strategy
+The course presents defense in depth as a layered approach to security.
+
+#### Defense in depth
+Also described as a castle approach or Swiss cheese model, where multiple layers reduce the chance that one failure leads directly to compromise.
+
+#### Common layers
+1. **Perimeter layer**: credentials and user authentication
+2. **Network layer**: firewalls and network controls
+3. **Endpoint layer**: protection for user and server devices
+4. **Application layer**: software-level protections
+5. **Data layer**: asset classification and data protection
+
+#### Key idea
+No single control is enough on its own.
 
 ---
 
 ### Common Vulnerabilities and Exposures
-Security teams often rely on industry standards to name and track known vulnerabilities.
+This section covers how vulnerabilities are named and prioritized.
+
+#### Exposure vs. vulnerability
+- **Exposure**: A mistake or condition that can be exploited by a threat
+- **Vulnerability**: A weakness in a system
 
 #### CVE
-**Common Vulnerabilities and Exposures (CVE)** provides a standard identifier for publicly known vulnerabilities.
+**Common Vulnerabilities and Exposures (CVE)** is a standardized naming system for publicly known vulnerabilities.
 
-Example:
-`CVE-2021-44228` identifies Log4Shell.
+#### CVE background
+- Originally created by MITRE in 1999
+- Reviewed by CVE Numbering Authorities (CNAs)
 
-#### CVSS
-**Common Vulnerability Scoring System (CVSS)** helps measure the severity of a vulnerability.
+#### NIST NVD and CVSS
+- The **National Vulnerability Database (NVD)** uses **CVSS**
+- **Common Vulnerability Scoring System (CVSS)** scores severity on a `0.0` to `10.0` scale
 
-#### Severity examples
-| Score Range | Severity |
-|-------------|----------|
-| **0.0** | None |
-| **0.1 - 3.9** | Low |
-| **4.0 - 6.9** | Medium |
-| **7.0 - 8.9** | High |
-| **9.0 - 10.0** | Critical |
-
-#### Why standards matter
-- Improve communication between teams
-- Help prioritize remediation
-- Create consistency across tools and reports
+##### General score interpretation
+- Under `4.0`: lower urgency
+- Over `9.0`: requires immediate attention
 
 ---
 
-### Attack Surfaces and Exposure
-Attackers look for weaknesses in systems, applications, and processes. Security analysts need to think like attackers to understand where exposures exist.
+### Vulnerabilities of CI/CD and the OWASP Top 10
+The module also introduces common weaknesses in software development and web applications.
 
-#### Common exposure sources
-- Default passwords
-- Missing patches
-- Misconfigured services
-- Excessive permissions
-- Unused accounts
-- Insecure web applications
+#### CI/CD vulnerabilities
+Weaknesses can appear anywhere in continuous integration and continuous delivery pipelines if:
+- secrets are exposed
+- dependencies are unverified
+- access is too broad
+- build and deployment systems are not hardened
 
-#### Attacker mindset
-An attacker asks:
-- What is exposed to the internet?
-- Which systems are unpatched?
-- Which users can be tricked?
-- What paths lead to sensitive assets?
+#### OWASP Top 10
+The course points to the OWASP Top 10 as a useful reference for the most significant web application security risks.
 
-#### Defense in depth
-Defense in depth means using multiple layers of protection so one failure does not immediately expose a critical asset.
+#### Why this matters
+- Application weaknesses often become entry points
+- Secure development practices help reduce avoidable exposure
 
-Examples:
-- Endpoint protection
-- Network segmentation
-- MFA
-- Logging and alerting
-- Backups
+---
 
-#### Key takeaways
-- Exposure is often created by small configuration or process failures
-- Defense in depth reduces the impact of a single weakness
-- Thinking like an attacker improves risk identification
+### Open Source Intelligence and Vulnerability Scanning
+Security professionals use publicly available information and automated tools to identify risk.
+
+#### OSINT
+**Open source intelligence (OSINT)** is intelligence gathered from publicly available information.
+
+#### Information vs. intelligence
+- **Information**: raw facts or data
+- **Intelligence**: information that has been analyzed and interpreted to produce useful insight
+
+#### Vulnerability scanning approaches
+The course covers different approaches to vulnerability scanning and emphasizes that discovery alone is not enough. Findings still need analysis and prioritization.
 
 ---
 
 ### Vulnerability Assessments and Penetration Testing
-Both activities help identify weaknesses, but they are not the same.
+The course distinguishes between identifying weaknesses and actively testing exploitability.
 
-#### Vulnerability assessment
-- Finds and documents known weaknesses
-- Often automated with scanners
-- Focuses on breadth and prioritization
+#### Vulnerability assessment process
+1. **Identification**: Discover the current state
+2. **Vulnerability analysis**: Examine each weakness
+3. **Risk assessment**: Score the vulnerability
+4. **Remediation**: Fix or reduce the issue
 
-#### Penetration testing
-- Simulates real attacker behavior
-- Attempts to exploit weaknesses safely
-- Focuses on proving impact
+#### Penetration testing teams
+- **Red team**: Simulates attacks
+- **Blue team**: Defends and responds
+- **Purple team**: Combines offense and defense collaboration
 
-#### Comparison
-| Activity | Main Goal | Typical Output |
-|----------|-----------|----------------|
-| **Vulnerability assessment** | Identify weaknesses | List of findings and severity |
-| **Penetration test** | Validate exploitability | Demonstrated attack paths and impact |
+#### Types of penetration testing
+| Type | Meaning |
+|------|---------|
+| **Open-box** | Tester has extensive internal knowledge |
+| **Closed-box / Black-box** | Tester has outsider-level knowledge |
+| **Partial-knowledge / Grey-box** | Tester has limited internal knowledge |
 
-#### Key takeaways
-- Vulnerability assessments are broader and more routine
-- Penetration tests are deeper and more adversarial
-- Both contribute to stronger asset protection
+#### Related topic
+The module also emphasizes the importance of software and system updates as part of reducing vulnerabilities.
 
 ---
 
-### Remediation and Mitigation
-Once a vulnerability is found, organizations choose how to address it based on risk, cost, and business needs.
+### Adopt an Attacker Mindset
+Security analysts are encouraged to think like attackers in order to identify likely paths into a system.
 
-#### Common response options
-- **Remediation**: fully fix the issue
-- **Mitigation**: reduce the likelihood or impact
-- **Acceptance**: formally accept the risk
-- **Compensating control**: add a different safeguard when a direct fix is not possible
+#### Types of threat actors
+- Competitor
+- State actor
+- Criminal syndicate
+- Insider threat
+- Shadow IT user
 
-#### Examples
-- Apply a security patch
-- Disable a vulnerable service
-- Block exposure with a firewall rule
-- Increase monitoring until a permanent fix is available
+#### Important term
+- **Advanced persistent threat (APT)**: A threat actor or campaign that maintains access over a long period of time
 
-#### Key takeaways
-- Fast remediation is best for critical vulnerabilities
-- Mitigation is useful when immediate patching is not possible
-- Business context influences response decisions
+#### Types of hackers
+- Unauthorized hacker
+- Authorized or ethical hacker
+- Semi-authorized actor such as a hacktivist
+
+#### Common attack vectors
+- Direct physical access
+- Removable media
+- Social media platforms
+- Email
+- Wireless networks
+- Cloud services
+- Supply chains
+
+#### Defending against attack vectors
+- Educate users
+- Apply least privilege
+- Use appropriate controls and tools
+- Harden all entry points
 
 ---
 
 ### Terms and Definitions from Module 3
 
-**attack vector**: The path or method a threat actor uses to gain unauthorized access to a system or data.
+**advanced persistent threat (APT)**: A threat that maintains unauthorized access to a system for an extended period of time.
 
-**Common Vulnerabilities and Exposures (CVE)**: A standardized list of publicly known cybersecurity vulnerabilities.
+**attack vector**: The path or method used to gain access to a target.
 
-**Common Vulnerability Scoring System (CVSS)**: A framework used to measure the severity of vulnerabilities.
+**Common Vulnerabilities and Exposures (CVE)**: A standardized system for identifying publicly known vulnerabilities.
 
-**compensating control**: An alternative safeguard used when a primary control cannot be implemented.
+**Common Vulnerability Scoring System (CVSS)**: A scoring framework used to measure vulnerability severity.
 
-**defense in depth**: A layered security approach that uses multiple controls to protect assets.
+**defense in depth**: A layered security strategy that uses multiple safeguards to protect assets.
 
-**exposure**: The condition of being accessible to threats because of a weakness or misconfiguration.
+**exposure**: A mistake or condition that can be exploited by a threat.
 
-**mitigation**: The reduction of risk by applying safeguards or limiting impact.
+**National Vulnerability Database (NVD)**: A U.S. government repository of standards-based vulnerability information.
 
-**patch management**: The process of applying updates to fix vulnerabilities and improve security.
+**open source intelligence (OSINT)**: Intelligence produced from publicly available information.
 
-**penetration test (pen test)**: A simulated attack that helps identify and validate exploitable weaknesses.
+**penetration testing**: Simulated attack activity used to evaluate security defenses.
 
-**remediation**: The act of fully fixing a vulnerability or security issue.
+**red team**: A team that simulates attacker behavior.
 
-**vulnerability assessment**: The process of identifying and evaluating weaknesses in systems or applications.
+**remediation**: The process of fixing or reducing a vulnerability.
 
-**vulnerability management**: The ongoing process of identifying, prioritizing, addressing, and monitoring vulnerabilities.
+**shadow IT**: Technology used without formal organizational approval or oversight.
+
+**vulnerability assessment**: The process of identifying, analyzing, and prioritizing weaknesses.
+
+**vulnerability management**: The ongoing process of discovering, evaluating, and addressing vulnerabilities.
+
+**zero-day**: A vulnerability with no available time or patch buffer before exploitation becomes a risk.
 
 ---
 ---
 
 ## Module 4
 
-### Common Threats to Asset Security
-Threats are events or circumstances that can negatively affect assets. Threat actors use many different tactics to steal data, disrupt services, or gain unauthorized access.
+### Social Engineering Tactics
+This module begins with threats that target people instead of systems directly.
 
-#### Common threat categories
-- Social engineering
-- Malware
-- Web-based attacks
-- Insider threats
-- Credential attacks
-- Supply chain threats
+#### Social engineering
+A manipulation technique that exploits human behavior to gain information, access, or valuables.
 
-#### Threat vs. vulnerability
-- A **threat** is a potential cause of harm
-- A **vulnerability** is a weakness that a threat can exploit
+#### Typical stages
+1. **Prepare**
+2. **Establish trust**
+3. **Use persuasion tactics**
+4. **Disconnect from the target**
 
----
+#### Common social engineering techniques
+- **Pretexting**
+- **Baiting**
+- **Quid pro quo**
+- **Tailgating**
+- **Watering hole attack**
 
-### Social Engineering Attacks
-Social engineering manipulates people into revealing information or performing unsafe actions.
-
-#### Common types
-| Attack Type | Description |
-|-------------|-------------|
-| **Phishing** | Fraudulent messages designed to steal information |
-| **Spear phishing** | Targeted phishing aimed at a specific person or group |
-| **Whaling** | Phishing aimed at executives or high-value targets |
-| **Vishing** | Voice-based social engineering |
-| **Smishing** | SMS or text-based social engineering |
-| **Pretexting** | Creating a false scenario to gain trust or access |
-
-#### Warning signs
-- Urgent requests
-- Suspicious links or attachments
-- Unexpected login prompts
-- Requests for sensitive data
-- Impersonation of trusted contacts
-
-#### Key takeaways
-- People are often the easiest target
-- Awareness training reduces social engineering risk
-- Verification procedures are essential
+#### Prevention ideas emphasized in the course
+- Use managerial controls
+- Stay informed about threat trends
+- Share security knowledge with others
+- Be cautious with unexpected communication and requests
 
 ---
 
-### Malware and Malicious Code
-Malware is software intentionally designed to harm systems, steal data, or enable unauthorized access.
+### Types of Phishing
+The course treats phishing as one of the most common social engineering threats.
 
-#### Common malware types
-- **Virus**: attaches to legitimate files and spreads when executed
-- **Worm**: self-replicates across systems and networks
-- **Trojan**: disguises itself as legitimate software
-- **Ransomware**: encrypts data and demands payment
-- **Spyware**: secretly collects information
-- **Rootkit**: hides malicious activity and maintains privileged access
+#### Phishing
+A deceptive attempt to obtain information or deliver malicious content through messages, sites, or attachments.
 
-#### Malware goals
-- Steal credentials
-- Disrupt business operations
-- Exfiltrate sensitive data
-- Create persistence on a system
+#### Common phishing kit components
+- Malicious attachments
+- Fake data collection forms
+- Fraudulent web links
 
-#### Key takeaways
-- Malware can affect confidentiality, integrity, and availability
-- Prevention depends on patching, user awareness, access controls, and monitoring
-- Backups are critical for ransomware resilience
+#### Why phishing works
+- Creates urgency
+- Exploits trust
+- Imitates familiar brands or people
+
+#### Key idea
+Phishing is both a user problem and a system problem, so defenses need training plus technical controls.
+
+---
+
+### An Introduction to Malware
+The course introduces several common malware families and signs of infection.
+
+#### Five common malware types
+1. **Virus**: Requires user action to activate
+2. **Worm**: Self-replicates and spreads on its own
+3. **Trojan**: Disguises itself as something legitimate
+4. **Ransomware**: Encrypts data and demands payment
+5. **Spyware**: Collects data without consent
+
+#### Cryptojacking
+Cryptojacking malware uses a victim's system resources to mine cryptocurrency.
+
+##### Common signs of cryptojacking
+- System slowdown
+- Increased CPU usage
+- Sudden crashes
+- Fast battery drain
+- Higher electricity costs
 
 ---
 
 ### Web-Based Exploits
-Attackers often target web applications because they are exposed to users, customers, and the internet.
+This module also covers attacks against web applications and databases.
 
-#### Common web threats
-- **SQL injection**: malicious SQL input manipulates database queries
-- **Cross-site scripting (XSS)**: malicious scripts run in a user's browser
-- **Cross-site request forgery (CSRF)**: tricks a user into submitting unintended requests
-- **Command injection**: attacker input causes system commands to run
+#### Cross-site scripting (XSS)
+An injection attack that inserts malicious code into a vulnerable website.
 
-#### Why web apps are attractive targets
-- Public exposure
-- Valuable customer data
-- Direct connection to backend services
-- Frequent changes and updates
+#### Common XSS types
+- **Reflected**
+- **Stored**
+- **DOM-based**
 
-#### Defensive practices
+#### SQL injection
+An attack that manipulates database queries through untrusted input.
+
+#### SQL injection types
+- **In-band**
+- **Out-of-band**
+- **Inferential**
+
+#### SQL injection prevention
+- Prepared statements
+- Input sanitization
 - Input validation
-- Parameterized queries
-- Output encoding
-- Secure session management
-- Regular application testing
+
+#### Key idea
+Applications that accept user input without strong validation create exploitable gaps.
 
 ---
 
-### Threat Modeling
-Threat modeling is the process of identifying potential threats, vulnerabilities, and mitigations before an attack occurs.
+### A Proactive Approach to Security
+After reviewing common threats, the course shifts to proactive security thinking through threat modeling.
 
-#### Goals of threat modeling
-- Understand what needs protection
-- Identify likely attackers and attack paths
-- Anticipate abuse cases
-- Improve security during design and operation
+#### Threat modeling
+The process of identifying assets, vulnerabilities, and the ways threats could affect them.
 
-#### Basic threat modeling process
-1. Identify assets
-2. Diagram the system or workflow
-3. Identify possible threats
-4. Analyze vulnerabilities and attack paths
-5. Prioritize risks
-6. Recommend controls or design changes
+#### Typical threat modeling steps
+1. Define the scope
+2. Identify threats
+3. Characterize the environment
+4. Analyze threats
+5. Mitigate risks
+6. Evaluate findings
 
-#### Benefits
-- Encourages proactive security thinking
-- Helps teams focus on the highest-risk areas
-- Supports secure system design
+#### Risk response options
+- Avoid
+- Transfer
+- Reduce
+- Accept
 
-#### Key takeaways
-- Threat modeling helps teams think like attackers without waiting for a real incident
-- It is useful during design, deployment, and review phases
-- The quality of threat modeling depends on clear understanding of assets and trust boundaries
+#### Related concept
+Attack trees help map how threats might reach an asset through different attack paths.
 
 ---
 
-### Staying Ahead of Threat Actors
-Security professionals need continuous awareness of how attackers operate.
+### PASTA: Process for Attack Simulation and Threat Analysis
+The course introduces PASTA as a structured threat modeling framework.
 
-#### Common ways teams stay prepared
-- Monitor threat intelligence sources
-- Review logs and alerts
-- Patch high-risk systems quickly
-- Run tabletop exercises
-- Update playbooks and controls
-- Perform regular assessments and testing
+#### PASTA stages
+1. **Define business and security objectives**
+2. **Define technical scope**
+3. **Decompose the application**
+4. **Perform threat analysis**
+5. **Perform vulnerability analysis**
+6. **Conduct attack modeling**
+7. **Analyze risk and impact**
 
-#### Threat actor mindset
-Threat actors often look for:
-- Easy targets
-- Weak passwords
-- Untrained users
-- Poor visibility
-- Delayed patching
+#### Other frameworks briefly referenced
+- **STRIDE**
+- **Trike**
+- **VAST**
 
-#### Key takeaways
-- Security is an ongoing process of adaptation
-- Strong fundamentals reduce many common attack opportunities
-- Threat intelligence and continuous improvement help organizations respond faster
+#### Key idea
+Threat modeling helps security teams stay ahead of breaches by identifying risk before exploitation happens.
 
 ---
 
 ### Terms and Definitions from Module 4
 
-**command injection**: A web attack in which malicious input causes a system to execute unintended commands.
+**baiting**: A social engineering attack that lures a target with something enticing, such as a free file or device.
 
-**cross-site request forgery (CSRF)**: An attack that tricks a user into making an unwanted request to a web application where they are already authenticated.
+**cryptojacking**: The unauthorized use of a system's computing resources to mine cryptocurrency.
 
-**cross-site scripting (XSS)**: A web attack in which malicious scripts are injected into trusted web content.
+**cross-site scripting (XSS)**: An injection attack that inserts malicious code into a web application.
 
-**malware**: Software designed to harm systems, steal data, or gain unauthorized access.
+**malware**: Software designed to harm, exploit, or gain unauthorized access to systems.
 
-**phishing**: A social engineering attack that uses deceptive messages to steal information or deliver malware.
+**phishing**: A social engineering attack that uses deceptive communication to steal information or deliver malware.
 
-**pretexting**: A social engineering technique in which an attacker invents a false scenario to obtain information or access.
+**pretexting**: A social engineering technique in which an attacker invents a false scenario to gain trust or access.
+
+**quid pro quo**: A social engineering attack that offers something in exchange for information or access.
 
 **ransomware**: Malware that encrypts data and demands payment to restore access.
 
-**smishing**: A phishing attack delivered through text messages.
+**social engineering**: A manipulation technique that exploits human behavior to gain access, information, or valuables.
 
-**social engineering**: A manipulation technique that exploits human behavior to gain information, access, or valuables.
+**SQL injection**: A web attack that manipulates database queries through malicious input.
 
-**spear phishing**: A targeted phishing attack aimed at a specific individual or group.
+**tailgating**: Gaining unauthorized physical access by following an authorized person into a restricted area.
 
-**SQL injection**: A web attack that inserts malicious SQL statements into application inputs.
-
-**threat modeling**: The process of identifying potential threats, vulnerabilities, and mitigations affecting a system or asset.
+**threat modeling**: The process of identifying threats, vulnerabilities, and likely attack paths affecting an asset or system.
 
 **trojan**: Malware that appears legitimate but performs malicious actions.
 
-**vishing**: A voice-based phishing attack.
+**watering hole attack**: An attack in which a site frequently visited by a target group is compromised to infect visitors.
 
-**worm**: Malware that self-replicates and spreads without needing a host file.
+**worm**: Malware that can self-replicate and spread without attaching to another file.
 
 ---
 
 ## Final Takeaways
 
-- Asset security starts with knowing what assets exist and how important they are
-- Classification, privacy, encryption, and access control are central to protecting organizational assets
-- Vulnerability management helps teams identify and reduce weaknesses before attackers exploit them
-- Threats such as phishing, malware, and web attacks target both people and systems
-- Threat modeling and an attacker mindset help security teams stay proactive instead of reactive
-
----
----
----
+- Asset security begins with understanding assets, threats, vulnerabilities, and risk
+- Classification, security planning, and the NIST CSF help organizations decide what to protect and how
+- Controls such as encryption, hashing, IAM, MFA, and least privilege help protect organizational assets
+- Vulnerability management, defense in depth, and attacker mindset help identify weak points before they are exploited
+- Social engineering, phishing, malware, and web exploits are common threats to digital assets
+- Threat modeling frameworks such as PASTA help security professionals take a proactive approach to risk
